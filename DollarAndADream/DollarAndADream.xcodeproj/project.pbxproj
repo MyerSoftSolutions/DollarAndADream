@@ -14,6 +14,14 @@
 		D921725D1EB14764001E353A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921725C1EB14764001E353A /* Assets.xcassets */; };
 		D92172601EB14764001E353A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D921725E1EB14764001E353A /* LaunchScreen.storyboard */; };
 		D921726B1EB14764001E353A /* DollarAndADreamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921726A1EB14764001E353A /* DollarAndADreamTests.swift */; };
+		D92172761EB14910001E353A /* DDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172751EB14910001E353A /* DDLoginViewController.swift */; };
+		D92172771EB14910001E353A /* DDLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172751EB14910001E353A /* DDLoginViewController.swift */; };
+		D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172781EB14934001E353A /* DDSignUpViewController.swift */; };
+		D921727A1EB14934001E353A /* DDSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172781EB14934001E353A /* DDSignUpViewController.swift */; };
+		D921727C1EB14964001E353A /* DDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727B1EB14964001E353A /* DDHomeViewController.swift */; };
+		D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727B1EB14964001E353A /* DDHomeViewController.swift */; };
+		D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
+		D92172801EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +46,10 @@
 		D92172661EB14764001E353A /* DollarAndADreamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DollarAndADreamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D921726A1EB14764001E353A /* DollarAndADreamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DollarAndADreamTests.swift; sourceTree = "<group>"; };
 		D921726C1EB14764001E353A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92172751EB14910001E353A /* DDLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDLoginViewController.swift; sourceTree = "<group>"; };
+		D92172781EB14934001E353A /* DDSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSignUpViewController.swift; sourceTree = "<group>"; };
+		D921727B1EB14964001E353A /* DDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeViewController.swift; sourceTree = "<group>"; };
+		D921727E1EB14989001E353A /* DDSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,10 @@
 			children = (
 				D92172521EB14764001E353A /* AppDelegate.swift */,
 				D92172541EB14764001E353A /* ViewController.swift */,
+				D92172751EB14910001E353A /* DDLoginViewController.swift */,
+				D92172781EB14934001E353A /* DDSignUpViewController.swift */,
+				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
+				D921727E1EB14989001E353A /* DDSendViewController.swift */,
 				D92172561EB14764001E353A /* Main.storyboard */,
 				D921725C1EB14764001E353A /* Assets.xcassets */,
 				D921725E1EB14764001E353A /* LaunchScreen.storyboard */,
@@ -205,7 +221,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D921725B1EB14764001E353A /* DollarAndADream.xcdatamodeld in Sources */,
+				D921727C1EB14964001E353A /* DDHomeViewController.swift in Sources */,
 				D92172551EB14764001E353A /* ViewController.swift in Sources */,
+				D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */,
+				D92172761EB14910001E353A /* DDLoginViewController.swift in Sources */,
+				D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */,
 				D92172531EB14764001E353A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,7 +234,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D92172771EB14910001E353A /* DDLoginViewController.swift in Sources */,
+				D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */,
 				D921726B1EB14764001E353A /* DollarAndADreamTests.swift in Sources */,
+				D92172801EB14989001E353A /* DDSendViewController.swift in Sources */,
+				D921727A1EB14934001E353A /* DDSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
