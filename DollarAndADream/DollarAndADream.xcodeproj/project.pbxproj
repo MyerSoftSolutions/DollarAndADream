@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D92172531EB14764001E353A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172521EB14764001E353A /* AppDelegate.swift */; };
-		D92172551EB14764001E353A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172541EB14764001E353A /* ViewController.swift */; };
 		D92172581EB14764001E353A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92172561EB14764001E353A /* Main.storyboard */; };
 		D921725B1EB14764001E353A /* DollarAndADream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D92172591EB14764001E353A /* DollarAndADream.xcdatamodeld */; };
 		D921725D1EB14764001E353A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D921725C1EB14764001E353A /* Assets.xcassets */; };
@@ -37,7 +36,6 @@
 /* Begin PBXFileReference section */
 		D921724F1EB14764001E353A /* DollarAndADream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollarAndADream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92172521EB14764001E353A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D92172541EB14764001E353A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D92172571EB14764001E353A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D921725A1EB14764001E353A /* DollarAndADream.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DollarAndADream.xcdatamodel; sourceTree = "<group>"; };
 		D921725C1EB14764001E353A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				D92172521EB14764001E353A /* AppDelegate.swift */,
-				D92172541EB14764001E353A /* ViewController.swift */,
 				D92172751EB14910001E353A /* DDLoginViewController.swift */,
 				D92172781EB14934001E353A /* DDSignUpViewController.swift */,
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
@@ -222,7 +219,6 @@
 			files = (
 				D921725B1EB14764001E353A /* DollarAndADream.xcdatamodeld in Sources */,
 				D921727C1EB14964001E353A /* DDHomeViewController.swift in Sources */,
-				D92172551EB14764001E353A /* ViewController.swift in Sources */,
 				D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */,
 				D92172761EB14910001E353A /* DDLoginViewController.swift in Sources */,
 				D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */,
