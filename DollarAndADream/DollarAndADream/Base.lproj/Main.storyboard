@@ -206,6 +206,7 @@
                                         <color key="backgroundColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="sendTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="cgJ-iS-JE2"/>
+                                            <segue destination="SYf-DR-zYV" kind="show" identifier="SendSegue" id="ZW4-lh-89A"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUP-te-5aZ">
@@ -329,9 +330,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJB-rl-cCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1120.8" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1196" y="-137"/>
         </scene>
-        <!--Send View Controller-->
+        <!--Send $-->
         <scene sceneID="egf-Sq-rNX">
             <objects>
                 <viewController id="uvD-9d-rD3" customClass="DDSendViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
@@ -342,12 +343,13 @@
                     <view key="view" contentMode="scaleToFill" id="yRm-hD-BKL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Send $" id="9RI-1g-cQF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhm-Kz-F6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2130" y="212"/>
+            <point key="canvasLocation" x="2964" y="188"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xy5-xm-LR0">
@@ -358,6 +360,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -367,6 +372,28 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D8H-Vm-Cva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-543" y="910"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HfQ-dd-XYQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SYf-DR-zYV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="F16-he-mQx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uvD-9d-rD3" kind="relationship" relationship="rootViewController" id="eLE-yi-0bh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MZC-VW-KuL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2076" y="34"/>
         </scene>
     </scenes>
     <resources>
