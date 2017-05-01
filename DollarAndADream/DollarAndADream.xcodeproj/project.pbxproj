@@ -21,6 +21,8 @@
 		D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727B1EB14964001E353A /* DDHomeViewController.swift */; };
 		D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
 		D92172801EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
+		D9618E421EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */; };
+		D9618E431EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		D92172781EB14934001E353A /* DDSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSignUpViewController.swift; sourceTree = "<group>"; };
 		D921727B1EB14964001E353A /* DDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeViewController.swift; sourceTree = "<group>"; };
 		D921727E1EB14989001E353A /* DDSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSendViewController.swift; sourceTree = "<group>"; };
+		D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 			children = (
 				D92172521EB14764001E353A /* AppDelegate.swift */,
 				D92172751EB14910001E353A /* DDLoginViewController.swift */,
+				D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */,
 				D92172781EB14934001E353A /* DDSignUpViewController.swift */,
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
 				D921727E1EB14989001E353A /* DDSendViewController.swift */,
@@ -222,6 +226,7 @@
 				D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */,
 				D92172761EB14910001E353A /* DDLoginViewController.swift in Sources */,
 				D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */,
+				D9618E421EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */,
 				D92172531EB14764001E353A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -232,6 +237,7 @@
 			files = (
 				D92172771EB14910001E353A /* DDLoginViewController.swift in Sources */,
 				D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */,
+				D9618E431EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */,
 				D921726B1EB14764001E353A /* DollarAndADreamTests.swift in Sources */,
 				D92172801EB14989001E353A /* DDSendViewController.swift in Sources */,
 				D921727A1EB14934001E353A /* DDSignUpViewController.swift in Sources */,
@@ -438,6 +444,7 @@
 				D92172711EB14764001E353A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D92172721EB14764001E353A /* Build configuration list for PBXNativeTarget "DollarAndADreamTests" */ = {
 			isa = XCConfigurationList;
@@ -446,6 +453,7 @@
 				D92172741EB14764001E353A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

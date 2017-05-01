@@ -10,6 +10,8 @@ import UIKit
 
 class DDLoginViewController: UIViewController {
 
+    @IBOutlet var emailTextfield: UITextField!
+    @IBOutlet var passTextfield: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,7 +23,15 @@ class DDLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func loginTapped(_ sender: UIButton) {
+        //Login Tapped -> Validate the fields first, then Take and make Dictionary out of emailTextfield and passTextFields for URLRequest
+    }
 
+    @IBAction func signUpTapped(_ sender: UIButton) {
+        //Segue to SignUpViewController
+        
+        
+    }
     /*
     // MARK: - Navigation
 

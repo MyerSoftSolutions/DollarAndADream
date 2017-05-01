@@ -63,6 +63,10 @@
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNv-FY-CYh"/>
+                                    <segue destination="D8K-OS-aXH" kind="show" id="E53-uj-Bbf"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMp-0q-vZC">
                                 <rect key="frame" x="81" y="67" width="212" height="33"/>
@@ -78,6 +82,10 @@
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.61568627450980395" green="0.90980392156862744" blue="0.62745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qR7-uP-RNd"/>
+                                    <segue destination="wVa-ZJ-wda" kind="show" identifier="SignUpSegue" id="bPY-qe-3Mo"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098039215685" green="0.094117647058823528" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -102,12 +110,16 @@
                             <constraint firstItem="xgd-OR-N4J" firstAttribute="top" secondItem="c3M-9l-jg4" secondAttribute="bottom" constant="92" id="utZ-RK-sa1"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextfield" destination="lHS-Ed-mqT" id="EA3-gN-ibA"/>
+                        <outlet property="passTextfield" destination="c3M-9l-jg4" id="0jB-qc-jNe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign Up-->
         <scene sceneID="69N-fy-pe9">
             <objects>
                 <viewController id="5mi-2s-3WC" customClass="DDSignUpViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
@@ -118,12 +130,13 @@
                     <view key="view" contentMode="scaleToFill" id="iww-TQ-U4y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="vZr-ZH-v2j"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CX2-dg-LmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="127" y="846"/>
+            <point key="canvasLocation" x="137" y="910"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="F98-fF-ABv">
@@ -136,12 +149,80 @@
                     <view key="view" contentMode="scaleToFill" id="6JL-HZ-gI5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Wi-s1-wiQ">
+                                <rect key="frame" x="47" y="91" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0FH-jG-IVv">
+                                <rect key="frame" x="57" y="101" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="025-4J-Yk3">
+                                <rect key="frame" x="67" y="111" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNN-L6-MbP">
+                                <rect key="frame" x="77" y="121" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oc0-ol-zK1">
+                                <rect key="frame" x="85" y="132" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2Z-5r-6RL">
+                                <rect key="frame" x="95" y="142" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THv-cp-hB4">
+                                <rect key="frame" x="105" y="152" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar &amp; a Dream" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEg-Bj-Pjd">
+                                <rect key="frame" x="115" y="162" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sEg-Bj-Pjd" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="99" id="2VL-XB-0kn"/>
+                            <constraint firstItem="0FH-jG-IVv" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="41" id="4Nl-oy-Dyg"/>
+                            <constraint firstItem="025-4J-Yk3" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="51" id="DW7-DV-dub"/>
+                            <constraint firstItem="Oc0-ol-zK1" firstAttribute="top" secondItem="6Wi-s1-wiQ" secondAttribute="bottom" constant="8" symbolic="YES" id="DbM-lc-X5c"/>
+                            <constraint firstItem="Oc0-ol-zK1" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="69" id="GHR-oI-tWq"/>
+                            <constraint firstItem="0FH-jG-IVv" firstAttribute="top" secondItem="hGO-A1-ClC" secondAttribute="bottom" constant="81" id="RDp-vQ-jvW"/>
+                            <constraint firstItem="6Wi-s1-wiQ" firstAttribute="top" secondItem="hGO-A1-ClC" secondAttribute="bottom" constant="71" id="Rif-tW-dca"/>
+                            <constraint firstItem="xNN-L6-MbP" firstAttribute="top" secondItem="hGO-A1-ClC" secondAttribute="bottom" constant="101" id="Wnr-Td-bIG"/>
+                            <constraint firstItem="sEg-Bj-Pjd" firstAttribute="top" secondItem="xNN-L6-MbP" secondAttribute="bottom" constant="8" symbolic="YES" id="ZPW-cO-Ob3"/>
+                            <constraint firstItem="xNN-L6-MbP" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="61" id="cKa-D6-2zt"/>
+                            <constraint firstItem="N2Z-5r-6RL" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="79" id="eAc-hg-kwQ"/>
+                            <constraint firstItem="025-4J-Yk3" firstAttribute="top" secondItem="hGO-A1-ClC" secondAttribute="bottom" constant="91" id="fUA-WA-cM6"/>
+                            <constraint firstItem="THv-cp-hB4" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="89" id="fyf-O2-m22"/>
+                            <constraint firstItem="THv-cp-hB4" firstAttribute="top" secondItem="025-4J-Yk3" secondAttribute="bottom" constant="8" symbolic="YES" id="khQ-7J-ccN"/>
+                            <constraint firstItem="6Wi-s1-wiQ" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="31" id="ned-Vm-wls"/>
+                            <constraint firstItem="N2Z-5r-6RL" firstAttribute="top" secondItem="0FH-jG-IVv" secondAttribute="bottom" constant="8" symbolic="YES" id="tRZ-zm-V0u"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJB-rl-cCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1091" y="63"/>
+            <point key="canvasLocation" x="1121" y="139"/>
         </scene>
         <!--Send View Controller-->
         <scene sceneID="egf-Sq-rNX">
@@ -160,6 +241,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhm-Kz-F6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2068" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xy5-xm-LR0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wVa-ZJ-wda" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="adZ-A7-CI6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5mi-2s-3WC" kind="relationship" relationship="rootViewController" id="Ij1-rI-t9G"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D8H-Vm-Cva" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-543" y="910"/>
         </scene>
     </scenes>
 </document>

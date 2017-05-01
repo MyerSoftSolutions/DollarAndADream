@@ -12,7 +12,7 @@ class DDSignUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.createCustomBackButton("X")
         // Do any additional setup after loading the view.
     }
 
