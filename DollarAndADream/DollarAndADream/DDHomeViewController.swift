@@ -10,6 +10,9 @@ import UIKit
 
 class DDHomeViewController: UIViewController {
 
+    @IBOutlet var receivedLabelTrailCon: NSLayoutConstraint!
+    @IBOutlet var favesLabelTrailCon: NSLayoutConstraint!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

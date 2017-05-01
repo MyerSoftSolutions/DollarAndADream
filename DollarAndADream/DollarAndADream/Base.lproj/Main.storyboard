@@ -322,6 +322,10 @@
                             <constraint firstItem="knq-Gm-8J2" firstAttribute="top" secondItem="nrD-Ku-4G8" secondAttribute="bottom" constant="92" id="wOU-6x-hZG"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="favesLabelTrailCon" destination="7mj-yg-6If" id="HQM-gB-g00"/>
+                        <outlet property="receivedLabelTrailCon" destination="nCz-Vy-W1a" id="nYn-Bp-taJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zJB-rl-cCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
