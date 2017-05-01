@@ -21,7 +21,21 @@ class DDHomeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func sendTapped(_ sender: Any) {
+    }
 
+    @IBAction func receivedTapped(_ sender: Any) {
+    }
+    
+    @IBAction func mapTapped(_ sender: Any) {
+    }
+    
+    @IBAction func favoritesTapped(_ sender: Any) {
+    }
+    
+    @IBAction func settingsTapped(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 
