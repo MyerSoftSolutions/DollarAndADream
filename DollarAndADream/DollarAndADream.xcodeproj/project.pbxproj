@@ -23,6 +23,9 @@
 		D92172801EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
 		D9618E421EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */; };
 		D9618E431EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */; };
+		D9618E451EB8BBFF00074CDC /* GrandHotel-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */; };
+		D9618E481EB8C17100074CDC /* Glegoo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E461EB8C17100074CDC /* Glegoo-Bold.ttf */; };
+		D9618E491EB8C17100074CDC /* Glegoo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E471EB8C17100074CDC /* Glegoo-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D921727B1EB14964001E353A /* DDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeViewController.swift; sourceTree = "<group>"; };
 		D921727E1EB14989001E353A /* DDSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSendViewController.swift; sourceTree = "<group>"; };
 		D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.otf"; sourceTree = "<group>"; };
+		D9618E461EB8C17100074CDC /* Glegoo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Bold.ttf"; sourceTree = "<group>"; };
+		D9618E471EB8C17100074CDC /* Glegoo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
 				D921727E1EB14989001E353A /* DDSendViewController.swift */,
 				D92172561EB14764001E353A /* Main.storyboard */,
+				D9618E4A1EB8C1BC00074CDC /* Fonts */,
 				D921725C1EB14764001E353A /* Assets.xcassets */,
 				D921725E1EB14764001E353A /* LaunchScreen.storyboard */,
 				D92172611EB14764001E353A /* Info.plist */,
@@ -114,6 +121,16 @@
 				D921726C1EB14764001E353A /* Info.plist */,
 			);
 			path = DollarAndADreamTests;
+			sourceTree = "<group>";
+		};
+		D9618E4A1EB8C1BC00074CDC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D9618E461EB8C17100074CDC /* Glegoo-Bold.ttf */,
+				D9618E471EB8C17100074CDC /* Glegoo-Regular.ttf */,
+				D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,9 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9618E451EB8BBFF00074CDC /* GrandHotel-Regular.otf in Resources */,
 				D92172601EB14764001E353A /* LaunchScreen.storyboard in Resources */,
 				D921725D1EB14764001E353A /* Assets.xcassets in Resources */,
 				D92172581EB14764001E353A /* Main.storyboard in Resources */,
+				D9618E491EB8C17100074CDC /* Glegoo-Regular.ttf in Resources */,
+				D9618E481EB8C17100074CDC /* Glegoo-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
