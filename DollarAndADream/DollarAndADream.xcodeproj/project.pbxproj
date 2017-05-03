@@ -21,6 +21,12 @@
 		D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727B1EB14964001E353A /* DDHomeViewController.swift */; };
 		D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
 		D92172801EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
+		D94E7BBF1EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */; };
+		D94E7BC01EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */; };
+		D94E7BC21EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */; };
+		D94E7BC31EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */; };
+		D94E7BC51EBA1A9B00042B2C /* PKSwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */; };
+		D94E7BC61EBA1A9B00042B2C /* PKSwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */; };
 		D9618E421EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */; };
 		D9618E431EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */; };
 		D9618E451EB8BBFF00074CDC /* GrandHotel-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */; };
@@ -53,6 +59,9 @@
 		D92172781EB14934001E353A /* DDSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSignUpViewController.swift; sourceTree = "<group>"; };
 		D921727B1EB14964001E353A /* DDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeViewController.swift; sourceTree = "<group>"; };
 		D921727E1EB14989001E353A /* DDSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSendViewController.swift; sourceTree = "<group>"; };
+		D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDReceivedTableViewController.swift; sourceTree = "<group>"; };
+		D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFavesTableViewController.swift; sourceTree = "<group>"; };
+		D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKSwipeTableViewCell.swift; sourceTree = "<group>"; };
 		D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.otf"; sourceTree = "<group>"; };
 		D9618E461EB8C17100074CDC /* Glegoo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Bold.ttf"; sourceTree = "<group>"; };
@@ -105,6 +114,9 @@
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
 				D921727E1EB14989001E353A /* DDSendViewController.swift */,
 				D92172561EB14764001E353A /* Main.storyboard */,
+				D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */,
+				D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */,
+				D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */,
 				D9618E4A1EB8C1BC00074CDC /* Fonts */,
 				D921725C1EB14764001E353A /* Assets.xcassets */,
 				D921725E1EB14764001E353A /* LaunchScreen.storyboard */,
@@ -244,7 +256,10 @@
 				D921725B1EB14764001E353A /* DollarAndADream.xcdatamodeld in Sources */,
 				D921727C1EB14964001E353A /* DDHomeViewController.swift in Sources */,
 				D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */,
+				D94E7BC51EBA1A9B00042B2C /* PKSwipeTableViewCell.swift in Sources */,
 				D92172761EB14910001E353A /* DDLoginViewController.swift in Sources */,
+				D94E7BBF1EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */,
+				D94E7BC21EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */,
 				D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */,
 				D9618E421EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */,
 				D92172531EB14764001E353A /* AppDelegate.swift in Sources */,
@@ -257,9 +272,12 @@
 			files = (
 				D92172771EB14910001E353A /* DDLoginViewController.swift in Sources */,
 				D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */,
+				D94E7BC61EBA1A9B00042B2C /* PKSwipeTableViewCell.swift in Sources */,
+				D94E7BC01EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */,
 				D9618E431EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */,
 				D921726B1EB14764001E353A /* DollarAndADreamTests.swift in Sources */,
 				D92172801EB14989001E353A /* DDSendViewController.swift in Sources */,
+				D94E7BC31EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */,
 				D921727A1EB14934001E353A /* DDSignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
