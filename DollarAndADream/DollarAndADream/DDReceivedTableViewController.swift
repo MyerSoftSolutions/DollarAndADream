@@ -16,6 +16,12 @@ class DDReceivedCell : UITableViewCell {
 }
 
 class DDReceivedTableViewController: UITableViewController {
+    
+    let namesArray = ["JamesK", "Ascend20", "WellingtonD", "XavierE"]
+    let dateArray = ["May 3, 2017", "May 3, 2017", "April 30, 2017", "April 30, 2017"]
+    
+    let priceArray = ["$1.00", "89¢", "50¢", "$1.00"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +46,10 @@ class DDReceivedTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReceivedCell", for: indexPath) as! DDReceivedCell
 
+        cell.nameLabel.text = namesArray[indexPath.row]
+        cell.dateLabel.text = dateArray[indexPath.row]
+        cell.amountLabel.text = priceArray[indexPath.row]
+        
         return cell
     }
  

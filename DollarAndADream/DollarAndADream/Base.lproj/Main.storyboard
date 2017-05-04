@@ -10,6 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Glegoo-Bold.ttf">
+            <string>Glegoo-Bold</string>
+        </array>
         <array key="Glegoo-Regular.ttf">
             <string>Glegoo-Regular</string>
         </array>
@@ -467,9 +470,12 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43v-vu-S8T">
-                                            <rect key="frame" x="15" y="7" width="35" height="20"/>
-                                            <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="13"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43v-vu-S8T">
+                                            <rect key="frame" x="15" y="11" width="37.5" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="UEk-RL-6KK"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="14"/>
                                             <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -501,8 +507,8 @@
                                         <constraint firstAttribute="trailing" secondItem="obz-A0-Oe7" secondAttribute="trailing" constant="15" id="R7j-K2-1Y8"/>
                                         <constraint firstItem="8RC-YD-06C" firstAttribute="centerY" secondItem="bsA-7G-y4h" secondAttribute="centerY" id="RmF-kg-oUP"/>
                                         <constraint firstItem="obz-A0-Oe7" firstAttribute="leading" secondItem="bsA-7G-y4h" secondAttribute="leading" constant="15" id="a3r-ZK-6bb"/>
-                                        <constraint firstItem="43v-vu-S8T" firstAttribute="top" secondItem="bsA-7G-y4h" secondAttribute="top" constant="7" id="csF-9s-CJl"/>
-                                        <constraint firstItem="D2v-de-2CY" firstAttribute="top" secondItem="43v-vu-S8T" secondAttribute="bottom" constant="1" id="etC-bl-nyZ"/>
+                                        <constraint firstItem="43v-vu-S8T" firstAttribute="top" secondItem="bsA-7G-y4h" secondAttribute="top" constant="11" id="csF-9s-CJl"/>
+                                        <constraint firstItem="D2v-de-2CY" firstAttribute="top" secondItem="43v-vu-S8T" secondAttribute="bottom" constant="-3" id="etC-bl-nyZ"/>
                                         <constraint firstItem="43v-vu-S8T" firstAttribute="leading" secondItem="bsA-7G-y4h" secondAttribute="leading" constant="15" id="fg6-OP-8rA"/>
                                         <constraint firstItem="D2v-de-2CY" firstAttribute="leading" secondItem="bsA-7G-y4h" secondAttribute="leadingMargin" constant="23" id="oqr-cE-S1F"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="8RC-YD-06C" secondAttribute="trailing" constant="7" id="wYa-O5-cqu"/>
@@ -542,14 +548,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-8c-6wc">
-                                            <rect key="frame" x="15" y="8" width="197" height="17"/>
-                                            <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="13"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-8c-6wc">
+                                            <rect key="frame" x="15" y="8" width="40" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="VS6-D5-unt"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="15"/>
                                             <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-xb-wFI">
-                                            <rect key="frame" x="15" y="26" width="30" height="20"/>
+                                            <rect key="frame" x="15" y="27" width="29.5" height="20"/>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="11"/>
                                             <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -581,7 +590,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="JPe-8c-6wc" firstAttribute="top" secondItem="Wng-Y1-j1B" secondAttribute="topMargin" id="352-ke-hS5"/>
-                                        <constraint firstItem="e1o-rO-JR7" firstAttribute="top" secondItem="yTm-xb-wFI" secondAttribute="bottom" constant="7" id="8mD-4I-ggw"/>
+                                        <constraint firstItem="e1o-rO-JR7" firstAttribute="top" secondItem="yTm-xb-wFI" secondAttribute="bottom" constant="6" id="8mD-4I-ggw"/>
                                         <constraint firstItem="yTm-xb-wFI" firstAttribute="leading" secondItem="JPe-8c-6wc" secondAttribute="leading" id="ENb-8K-E5M"/>
                                         <constraint firstItem="RjS-Lu-d88" firstAttribute="top" secondItem="Wng-Y1-j1B" secondAttribute="top" constant="1" id="Qu0-Ja-JXQ"/>
                                         <constraint firstAttribute="trailing" secondItem="RjS-Lu-d88" secondAttribute="trailing" constant="8" id="Xrj-8M-Oow"/>
@@ -616,7 +625,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wVa-ZJ-wda" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="adZ-A7-CI6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adZ-A7-CI6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -639,7 +648,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SYf-DR-zYV" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="F16-he-mQx">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F16-he-mQx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -662,7 +671,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4HI-pB-LGd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vQQ-YQ-yyJ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vQQ-YQ-yyJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -685,7 +694,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y6A-cM-8aw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="8nL-ml-psb">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8nL-ml-psb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

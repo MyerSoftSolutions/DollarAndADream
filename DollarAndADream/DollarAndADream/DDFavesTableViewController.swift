@@ -32,10 +32,10 @@ class DDFavesCell : PKSwipeTableViewCell {
         self.deleteBtn = bigBtn
         
         let dismissLabel = UILabel()
-        dismissLabel.text = "Dismiss"
+        dismissLabel.text = "Remove"
         dismissLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 12.0)
         dismissLabel.textColor = UIColor.white
-        dismissLabel.frame =  CGRect(x: 17, y: 8, width: 50, height: 20)
+        dismissLabel.frame =  CGRect(x: 12, y:13, width: 50, height: 20)
         //        dismissLabel.center = viewCall.center
         dismissLabel.backgroundColor = UIColor.orange
         
@@ -52,6 +52,10 @@ class DDFavesCell : PKSwipeTableViewCell {
 class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProtocol {
 
     fileprivate var oldStoredCell : DDFavesCell?
+    
+    let namesArray = ["FirstLead", "KindredKids", "Welstar"]
+    let sinceArray = ["May 3, 2017", "Apr 30, 2017", "April 27, 2017"]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,7 +99,9 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavesCell", for: indexPath) as! DDFavesCell
         cell.delegate = self
-
+        
+        cell.nameLabel.text = namesArray[indexPath.row]
+        cell.dateLabel.text = "Since: \(sinceArray[indexPath.row])"
 
         return cell
     }
