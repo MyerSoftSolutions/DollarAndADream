@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DDSignUpViewController: UIViewController {
+class DDSignUpViewController: UIViewController, UIScrollViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
