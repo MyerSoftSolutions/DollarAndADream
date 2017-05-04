@@ -53,8 +53,8 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
 
     fileprivate var oldStoredCell : DDFavesCell?
     
-    let namesArray = ["FirstLead", "KindredKids", "Welstar"]
-    let sinceArray = ["May 3, 2017", "Apr 30, 2017", "April 27, 2017"]
+    var namesArray = ["FirstLead", "KindredKids", "Welstar", "MmmHmm", "Greatone"]
+    var sinceArray = ["May 3, 2017", "Apr 30, 2017", "Apr 27, 2017", "Apr 27, 2017", "Apr 27, 2017"]
 
 
     override func viewDidLoad() {
@@ -75,6 +75,15 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
         // Dispose of any resources that can be recreated.
     }
     
+    func deleteItem (_ sender: UIButton) {
+        let cell  = sender.superview!.superview!.superview!.superview as! DDFavesCell
+        let idxPath = tableView.indexPath(for: cell)
+        
+        namesArray.remove(at: idxPath!.row)
+        sinceArray.remove(at: idxPath!.row)
+        tableView.deleteRows(at: [idxPath!], with: .fade)
+        
+    }
     //MARK: SwipeCell Delegate Methods
     func swipeBeginInCell(_ cell: PKSwipeTableViewCell) {
         
@@ -91,8 +100,7 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 3
+        return namesArray.count
     }
 
 
@@ -102,6 +110,7 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
         
         cell.nameLabel.text = namesArray[indexPath.row]
         cell.dateLabel.text = "Since: \(sinceArray[indexPath.row])"
+        cell.deleteBtn?.addTarget(self, action: #selector(DDFavesTableViewController.deleteItem), for: .touchUpInside)
 
         return cell
     }
