@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D904B1531EC15D9D006525C1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D904B1521EC15D9D006525C1 /* CoreLocation.framework */; };
+		D904B1551EC15DA7006525C1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D904B1541EC15DA7006525C1 /* MapKit.framework */; };
+		D904B1571EC15F75006525C1 /* DDMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B1561EC15F75006525C1 /* DDMapViewController.swift */; };
+		D904B15B1EC165D8006525C1 /* DDSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B15A1EC165D8006525C1 /* DDSettingsTableViewController.swift */; };
+		D904B15C1EC165D8006525C1 /* DDSettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B15A1EC165D8006525C1 /* DDSettingsTableViewController.swift */; };
 		D92172531EB14764001E353A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92172521EB14764001E353A /* AppDelegate.swift */; };
 		D92172581EB14764001E353A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92172561EB14764001E353A /* Main.storyboard */; };
 		D921725B1EB14764001E353A /* DollarAndADream.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D92172591EB14764001E353A /* DollarAndADream.xcdatamodeld */; };
@@ -45,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D904B1521EC15D9D006525C1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D904B1541EC15DA7006525C1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D904B1561EC15F75006525C1 /* DDMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDMapViewController.swift; sourceTree = "<group>"; };
+		D904B15A1EC165D8006525C1 /* DDSettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSettingsTableViewController.swift; sourceTree = "<group>"; };
 		D921724F1EB14764001E353A /* DollarAndADream.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DollarAndADream.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D92172521EB14764001E353A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92172571EB14764001E353A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -73,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D904B1551EC15DA7006525C1 /* MapKit.framework in Frameworks */,
+				D904B1531EC15D9D006525C1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +97,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D904B1511EC15D9D006525C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D904B1541EC15DA7006525C1 /* MapKit.framework */,
+				D904B1521EC15D9D006525C1 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D92172461EB14764001E353A = {
 			isa = PBXGroup;
 			children = (
 				D92172511EB14764001E353A /* DollarAndADream */,
 				D92172691EB14764001E353A /* DollarAndADreamTests */,
 				D92172501EB14764001E353A /* Products */,
+				D904B1511EC15D9D006525C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,6 +135,8 @@
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
 				D921727E1EB14989001E353A /* DDSendViewController.swift */,
 				D92172561EB14764001E353A /* Main.storyboard */,
+				D904B15A1EC165D8006525C1 /* DDSettingsTableViewController.swift */,
+				D904B1561EC15F75006525C1 /* DDMapViewController.swift */,
 				D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */,
 				D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */,
 				D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */,
@@ -254,10 +277,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D921725B1EB14764001E353A /* DollarAndADream.xcdatamodeld in Sources */,
+				D904B1571EC15F75006525C1 /* DDMapViewController.swift in Sources */,
 				D921727C1EB14964001E353A /* DDHomeViewController.swift in Sources */,
 				D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */,
 				D94E7BC51EBA1A9B00042B2C /* PKSwipeTableViewCell.swift in Sources */,
 				D92172761EB14910001E353A /* DDLoginViewController.swift in Sources */,
+				D904B15B1EC165D8006525C1 /* DDSettingsTableViewController.swift in Sources */,
 				D94E7BBF1EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */,
 				D94E7BC21EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */,
 				D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */,
@@ -270,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D904B15C1EC165D8006525C1 /* DDSettingsTableViewController.swift in Sources */,
 				D92172771EB14910001E353A /* DDLoginViewController.swift in Sources */,
 				D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */,
 				D94E7BC61EBA1A9B00042B2C /* PKSwipeTableViewCell.swift in Sources */,

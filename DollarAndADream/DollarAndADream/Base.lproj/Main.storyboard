@@ -183,7 +183,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hometown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QpE-fw-9lZ">
-                                        <rect key="frame" x="48" y="144" width="66" height="22"/>
+                                        <rect key="frame" x="48" y="144" width="65.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -200,8 +200,8 @@
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibH-QF-Pxn">
-                                        <rect key="frame" x="32" y="222" width="305" height="1"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ibH-QF-Pxn">
+                                        <rect key="frame" x="32" y="222" width="311" height="1"/>
                                         <color key="backgroundColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="X2r-GZ-XCX"/>
@@ -238,7 +238,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Card ZIP code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aog-YU-oZQ">
-                                        <rect key="frame" x="48" y="474" width="82" height="22"/>
+                                        <rect key="frame" x="48" y="474" width="81.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -400,6 +400,7 @@
                                         <color key="backgroundColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="mapTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="Iyl-Gp-fDj"/>
+                                            <segue destination="Ubp-NP-QmC" kind="show" identifier="MapSegue" id="n0e-ZB-Ykx"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hl7-bC-2EH">
@@ -422,7 +423,7 @@
                                     <constraint firstAttribute="height" constant="42" id="lFX-ev-s4f"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="SEND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t1-Vn-UOL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="SEND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t1-Vn-UOL">
                                 <rect key="frame" x="10" y="323" width="48" height="26"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -434,8 +435,8 @@
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RECEIVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44s-aC-aKP">
-                                <rect key="frame" x="196.5" y="319" width="82.5" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEIVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44s-aC-aKP">
+                                <rect key="frame" x="196.5" y="319" width="82.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -446,14 +447,14 @@
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFI-25-Wn9">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFI-25-Wn9">
                                 <rect key="frame" x="163" y="596" width="48" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="3sf-EB-pBy"/>
                                     <constraint firstAttribute="width" constant="48" id="7uS-r9-WDW"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="settingsTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="Qh0-PR-rVr"/>
+                                    <segue destination="dMt-3z-vGe" kind="show" identifier="SettingSegue" id="A8N-I4-0hK"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLY-QF-VhH">
@@ -519,6 +520,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="Dhs-dR-C8r" secondAttribute="trailing" constant="33" id="ZoL-en-hWd"/>
                             <constraint firstItem="QLY-QF-VhH" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leadingMargin" constant="8" id="d94-c2-Scj"/>
                             <constraint firstItem="65F-jZ-B5i" firstAttribute="leading" secondItem="6JL-HZ-gI5" secondAttribute="leading" constant="143" id="jI1-bC-obn"/>
+                            <constraint firstItem="zFI-25-Wn9" firstAttribute="centerX" secondItem="6JL-HZ-gI5" secondAttribute="centerX" id="kNX-2G-yBF"/>
                             <constraint firstItem="44s-aC-aKP" firstAttribute="centerY" secondItem="8t1-Vn-UOL" secondAttribute="centerY" id="mBG-gu-eUr"/>
                             <constraint firstAttribute="trailingMargin" secondItem="44s-aC-aKP" secondAttribute="trailing" constant="80.5" id="nCz-Vy-W1a"/>
                             <constraint firstItem="E4j-Mf-ymM" firstAttribute="centerY" secondItem="zoU-W2-F86" secondAttribute="centerY" id="pj4-IM-6h0"/>
@@ -734,7 +736,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3R2-9z-z2Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4068" y="340.47976011994007"/>
+            <point key="canvasLocation" x="3212" y="207"/>
         </scene>
         <!--Favorites-->
         <scene sceneID="7DC-lh-3Q8">
@@ -822,7 +824,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="POw-jp-3OW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3327.1999999999998" y="920.68965517241384"/>
+            <point key="canvasLocation" x="3666" y="1030"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xy5-xm-LR0">
@@ -902,11 +904,11 @@
                         <viewControllerLayoutGuide type="bottom" id="VTU-HJ-OEg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="M6U-IG-xMf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="679"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vs-Kl-rU4">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="679"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZqO-Hz-OeQ">
                                         <rect key="frame" x="45" y="15" width="85" height="22"/>
@@ -951,13 +953,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hometown" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSK-PU-FTy">
-                                        <rect key="frame" x="45" y="192" width="66" height="22"/>
+                                        <rect key="frame" x="45" y="192" width="65.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dj1-NF-64U">
-                                        <rect key="frame" x="45" y="279" width="82" height="22"/>
+                                        <rect key="frame" x="45" y="279" width="81.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1006,7 +1008,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card ZIP code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ucu-5K-Zh7">
-                                        <rect key="frame" x="45" y="522" width="82" height="22"/>
+                                        <rect key="frame" x="45" y="522" width="81.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -1122,10 +1124,201 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="cnL-Kd-Mix"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="679"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Puv-Da-VXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-247" y="483"/>
+            <point key="canvasLocation" x="-321" y="400"/>
+        </scene>
+        <!--User Map-->
+        <scene sceneID="FTV-6u-bPn">
+            <objects>
+                <viewController id="2Xx-db-MMm" customClass="DDMapViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xcQ-tZ-lbm"/>
+                        <viewControllerLayoutGuide type="bottom" id="8X2-BT-LYH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X3H-zE-cMh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-Ll-d61">
+                                <rect key="frame" x="0.0" y="488" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="6eT-6N-kNx"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="s1o-7c-0Ky">
+                                <rect key="frame" x="0.0" y="64" width="375" height="424"/>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fi5-Sc-csM">
+                                <rect key="frame" x="0.0" y="489" width="375" height="178"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="haU-0d-IeR">
+                                        <rect key="frame" x="138" y="13" width="99" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="99" id="yWR-Ut-STN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hometown, USA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEO-Ck-hBd">
+                                        <rect key="frame" x="129" y="36" width="117" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="117" id="89j-T2-FYe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKt-jv-0vD">
+                                        <rect key="frame" x="14" y="99" width="73" height="22"/>
+                                        <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" misplaced="YES" text="This organization is transforming our local neighborhood. Thanks for your help!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGs-py-csL">
+                                        <rect key="frame" x="95" y="101" width="257" height="40"/>
+                                        <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="11"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NON-PROFIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsX-H2-zV4">
+                                        <rect key="frame" x="116" y="67" width="142" height="26"/>
+                                        <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="13"/>
+                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-Ne-b7t">
+                                        <rect key="frame" x="254" y="13" width="107" height="44"/>
+                                        <color key="backgroundColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Xqb-Kp-7sv"/>
+                                            <constraint firstAttribute="width" constant="107" id="gYz-uu-qP4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="12"/>
+                                        <state key="normal" title="Quick Send">
+                                            <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="quickSendTapped:" destination="2Xx-db-MMm" eventType="touchUpInside" id="J0v-Ih-Ms7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="CKt-jv-0vD" firstAttribute="leading" secondItem="Fi5-Sc-csM" secondAttribute="leading" constant="14" id="5Q3-2v-9ho"/>
+                                    <constraint firstAttribute="height" constant="178" id="5dz-aA-tCq"/>
+                                    <constraint firstAttribute="trailing" secondItem="aGs-py-csL" secondAttribute="trailing" constant="14" id="9UL-7C-A9P"/>
+                                    <constraint firstItem="ZsX-H2-zV4" firstAttribute="centerX" secondItem="Fi5-Sc-csM" secondAttribute="centerX" id="Ags-SD-hT4"/>
+                                    <constraint firstAttribute="bottom" secondItem="CKt-jv-0vD" secondAttribute="bottom" constant="57" id="CvK-RH-V0H"/>
+                                    <constraint firstItem="haU-0d-IeR" firstAttribute="top" secondItem="Fi5-Sc-csM" secondAttribute="top" constant="13" id="R0W-sU-dui"/>
+                                    <constraint firstItem="XEO-Ck-hBd" firstAttribute="centerX" secondItem="Fi5-Sc-csM" secondAttribute="centerX" id="WOH-Vm-7U5"/>
+                                    <constraint firstItem="aGs-py-csL" firstAttribute="top" secondItem="ZsX-H2-zV4" secondAttribute="bottom" constant="10" id="gx6-XE-mbP"/>
+                                    <constraint firstItem="aGs-py-csL" firstAttribute="leading" secondItem="CKt-jv-0vD" secondAttribute="trailing" constant="8" id="hf0-dI-aFn"/>
+                                    <constraint firstItem="VVE-Ne-b7t" firstAttribute="top" secondItem="haU-0d-IeR" secondAttribute="top" id="kMz-3W-2q3"/>
+                                    <constraint firstItem="XEO-Ck-hBd" firstAttribute="top" secondItem="haU-0d-IeR" secondAttribute="bottom" constant="1" id="s69-5Y-DWR"/>
+                                    <constraint firstAttribute="trailing" secondItem="VVE-Ne-b7t" secondAttribute="trailing" constant="14" id="upE-q4-Nyo"/>
+                                    <constraint firstItem="ZsX-H2-zV4" firstAttribute="top" secondItem="XEO-Ck-hBd" secondAttribute="bottom" constant="9" id="whL-WK-Qbl"/>
+                                    <constraint firstItem="haU-0d-IeR" firstAttribute="centerX" secondItem="Fi5-Sc-csM" secondAttribute="centerX" id="yha-5H-oER"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bpH-Ll-d61" firstAttribute="top" secondItem="s1o-7c-0Ky" secondAttribute="bottom" id="N5E-Hl-nuJ"/>
+                            <constraint firstItem="s1o-7c-0Ky" firstAttribute="top" secondItem="xcQ-tZ-lbm" secondAttribute="bottom" id="NJ5-BL-jCq"/>
+                            <constraint firstItem="Fi5-Sc-csM" firstAttribute="top" secondItem="bpH-Ll-d61" secondAttribute="bottom" id="WEd-aQ-q4Q"/>
+                            <constraint firstAttribute="trailing" secondItem="s1o-7c-0Ky" secondAttribute="trailing" id="a5U-FX-8Nn"/>
+                            <constraint firstItem="Fi5-Sc-csM" firstAttribute="leading" secondItem="X3H-zE-cMh" secondAttribute="leading" id="bAf-kj-zj1"/>
+                            <constraint firstAttribute="trailing" secondItem="bpH-Ll-d61" secondAttribute="trailing" id="eFX-ZS-FN9"/>
+                            <constraint firstItem="8X2-BT-LYH" firstAttribute="top" secondItem="Fi5-Sc-csM" secondAttribute="bottom" id="gg3-b3-odu"/>
+                            <constraint firstItem="bpH-Ll-d61" firstAttribute="leading" secondItem="X3H-zE-cMh" secondAttribute="leading" id="jwG-RQ-Lz4"/>
+                            <constraint firstAttribute="trailing" secondItem="Fi5-Sc-csM" secondAttribute="trailing" id="wwi-GG-Ekx"/>
+                            <constraint firstItem="s1o-7c-0Ky" firstAttribute="leading" secondItem="X3H-zE-cMh" secondAttribute="leading" id="z5u-kn-g3T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="User Map" id="PrF-YG-R15"/>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="aGs-py-csL" id="IkK-vx-Nr0"/>
+                        <outlet property="locationLabel" destination="XEO-Ck-hBd" id="PpK-ds-L2x"/>
+                        <outlet property="mapView" destination="s1o-7c-0Ky" id="iqx-py-LpX"/>
+                        <outlet property="nameLabel" destination="haU-0d-IeR" id="mUx-ii-pdu"/>
+                        <outlet property="receiverTypeLabel" destination="ZsX-H2-zV4" id="Qjm-2k-Z6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LON-DN-WWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1853.5999999999999" y="1194.1529235382309"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="aBs-rx-ttG">
+            <objects>
+                <tableViewController id="FoT-NL-l5C" customClass="DDSettingsTableViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="JUq-My-f8X">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" rowHeight="60" id="UPV-cf-q7o" customClass="DDSettingsCell" customModule="DollarAndADream" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UPV-cf-q7o" id="spA-Gd-g9k">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-Ys-Xkb">
+                                            <rect key="frame" x="15" y="22" width="40" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="Wxv-Yb-2QU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="15"/>
+                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-Hy-0qR">
+                                            <rect key="frame" x="305" y="15" width="51" height="31"/>
+                                            <connections>
+                                                <action selector="toggleTapped:" destination="FoT-NL-l5C" eventType="valueChanged" id="WDv-s7-pjf"/>
+                                            </connections>
+                                        </switch>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5u-En-dbL">
+                                            <rect key="frame" x="15" y="59" width="345" height="1"/>
+                                            <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="cDC-ih-U25"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="DnO-Ys-Xkb" firstAttribute="centerY" secondItem="spA-Gd-g9k" secondAttribute="centerY" id="0ev-4I-RJc"/>
+                                        <constraint firstItem="i0h-Hy-0qR" firstAttribute="centerY" secondItem="DnO-Ys-Xkb" secondAttribute="centerY" id="5Lm-lr-LaZ"/>
+                                        <constraint firstItem="DnO-Ys-Xkb" firstAttribute="leading" secondItem="spA-Gd-g9k" secondAttribute="leadingMargin" constant="7" id="6nR-WU-FC8"/>
+                                        <constraint firstAttribute="trailing" secondItem="I5u-En-dbL" secondAttribute="trailing" constant="15" id="Va3-N2-DbW"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="i0h-Hy-0qR" secondAttribute="trailing" constant="13" id="Yer-XX-nNF"/>
+                                        <constraint firstItem="I5u-En-dbL" firstAttribute="leading" secondItem="spA-Gd-g9k" secondAttribute="leading" constant="15" id="in4-h6-9eQ"/>
+                                        <constraint firstAttribute="bottom" secondItem="I5u-En-dbL" secondAttribute="bottom" id="v9d-2v-Oxp"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="DnO-Ys-Xkb" id="qxD-9g-JKe"/>
+                                    <outlet property="toggleSwitch" destination="i0h-Hy-0qR" id="maD-fr-aCD"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FoT-NL-l5C" id="yyi-hc-Wf8"/>
+                            <outlet property="delegate" destination="FoT-NL-l5C" id="BZv-wU-a0Z"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="dR9-ki-xXO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLh-KJ-4o7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047" y="1467"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LJE-ov-kST">
@@ -1148,7 +1341,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAT-lU-6CK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="782.15892053973016"/>
+            <point key="canvasLocation" x="2662" y="846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FV5-pD-K7u">
@@ -1172,6 +1365,52 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgV-7i-Npx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1015" y="395"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1m1-jQ-xZD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ubp-NP-QmC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="XhQ-VF-UJS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2Xx-db-MMm" kind="relationship" relationship="rootViewController" id="c1b-cu-sb8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIo-fe-XyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1124" y="670"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kBZ-Cr-CC4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dMt-3z-vGe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="z8W-mc-iee">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FoT-NL-l5C" kind="relationship" relationship="rootViewController" id="IJ7-FV-zub"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsz-1e-kCw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="362" y="955"/>
         </scene>
     </scenes>
     <resources>
