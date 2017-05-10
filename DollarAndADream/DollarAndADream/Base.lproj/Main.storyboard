@@ -586,7 +586,7 @@
                                     <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlS-gZ-OII"/>
+                                    <action selector="sendPressed:" destination="uvD-9d-rD3" eventType="touchUpInside" id="8sp-hI-dbn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ8-BZ-6op">
@@ -624,12 +624,22 @@
                                 <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Pac-Gh-0PU">
+                                <rect key="frame" x="118" y="134" width="210" height="44"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="uvD-9d-rD3" id="Txb-M8-mLf"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g95-3U-Hkn" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="137" id="19n-ck-X3I"/>
                             <constraint firstItem="ATW-vv-F1Y" firstAttribute="top" secondItem="ST6-s9-3nA" secondAttribute="bottom" constant="77" id="1DH-jq-uSR"/>
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="177" id="4Pq-gm-PNc"/>
+                            <constraint firstItem="Pac-Gh-0PU" firstAttribute="trailing" secondItem="ST6-s9-3nA" secondAttribute="trailing" id="5MU-yG-1mw"/>
                             <constraint firstItem="807-OU-xiE" firstAttribute="top" secondItem="H3O-nS-UdX" secondAttribute="bottom" constant="38" id="C8I-uQ-dlL"/>
                             <constraint firstItem="avU-EX-Phv" firstAttribute="top" secondItem="zdz-8N-NWY" secondAttribute="top" id="Cb9-H3-4LL"/>
                             <constraint firstItem="avU-EX-Phv" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="217" id="FYu-O0-dCM"/>
@@ -646,7 +656,9 @@
                             <constraint firstItem="ATW-vv-F1Y" firstAttribute="width" secondItem="ST6-s9-3nA" secondAttribute="width" id="X6P-Ow-6u9"/>
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="ZZ8-BZ-6op" secondAttribute="trailing" constant="66" id="Xd9-RG-rcg"/>
                             <constraint firstItem="ST6-s9-3nA" firstAttribute="top" secondItem="g95-3U-Hkn" secondAttribute="bottom" constant="48" id="gFn-VT-ApH"/>
+                            <constraint firstItem="Pac-Gh-0PU" firstAttribute="leading" secondItem="H3O-nS-UdX" secondAttribute="trailing" id="hZW-Sf-lA1"/>
                             <constraint firstItem="ZZ8-BZ-6op" firstAttribute="trailing" secondItem="807-OU-xiE" secondAttribute="trailing" id="hmk-WV-MRZ"/>
+                            <constraint firstItem="Pac-Gh-0PU" firstAttribute="top" secondItem="r2I-ef-P7y" secondAttribute="bottom" constant="70" id="l1J-5l-N7n"/>
                             <constraint firstItem="ATW-vv-F1Y" firstAttribute="trailing" secondItem="ST6-s9-3nA" secondAttribute="trailing" id="oAn-2E-zoW"/>
                             <constraint firstItem="g95-3U-Hkn" firstAttribute="top" secondItem="r2I-ef-P7y" secondAttribute="bottom" constant="275" id="pfW-Fu-RvI"/>
                             <constraint firstItem="H3O-nS-UdX" firstAttribute="top" secondItem="r2I-ef-P7y" secondAttribute="bottom" constant="60" id="rAE-jx-idF"/>
@@ -660,12 +672,13 @@
                     <navigationItem key="navigationItem" title="Send $" id="9RI-1g-cQF"/>
                     <connections>
                         <outlet property="amountSlider" destination="ST6-s9-3nA" id="wJl-3n-YNl"/>
+                        <outlet property="searchBar" destination="Pac-Gh-0PU" id="HcE-8u-tua"/>
                         <outlet property="sendBtn" destination="ATW-vv-F1Y" id="QB0-Rp-v1I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhm-Kz-F6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2852" y="-601"/>
+            <point key="canvasLocation" x="2852" y="-601.34932533733138"/>
         </scene>
         <!--Received-->
         <scene sceneID="BfG-DG-4D5">
