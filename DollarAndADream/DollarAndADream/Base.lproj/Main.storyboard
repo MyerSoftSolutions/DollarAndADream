@@ -571,6 +571,9 @@
                                 <color key="minimumTrackTintColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="uvD-9d-rD3" eventType="valueChanged" id="ZMM-pJ-MMq"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-vv-F1Y">
                                 <rect key="frame" x="48" y="495" width="280" height="44"/>
@@ -655,6 +658,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Send $" id="9RI-1g-cQF"/>
+                    <connections>
+                        <outlet property="amountSlider" destination="ST6-s9-3nA" id="wJl-3n-YNl"/>
+                        <outlet property="sendBtn" destination="ATW-vv-F1Y" id="QB0-Rp-v1I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhm-Kz-F6i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1175,7 +1182,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKt-jv-0vD">
-                                        <rect key="frame" x="14" y="99" width="73" height="22"/>
+                                        <rect key="frame" x="14" y="99" width="72.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
