@@ -44,6 +44,7 @@ class DDSendViewController: UIViewController, UISearchBarDelegate {
                 {
                     (result : UIAlertAction) -> Void in
                     alertController.dismiss(animated: true, completion: nil)
+                    self.navigationController?.dismiss(animated: true, completion: nil)
                 }
                 
                 let noAction = UIAlertAction(title: "No", style: UIAlertActionStyle.default)
@@ -62,6 +63,8 @@ class DDSendViewController: UIViewController, UISearchBarDelegate {
                 {
                     (result : UIAlertAction) -> Void in
                     alertController.dismiss(animated: true, completion: nil)
+                    self.navigationController?.dismiss(animated: true, completion: nil)
+
                 }
                 
                 let noAction = UIAlertAction(title: "No", style: UIAlertActionStyle.default)
