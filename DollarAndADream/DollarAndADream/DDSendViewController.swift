@@ -15,6 +15,9 @@ class DDSendViewController: UIViewController, UISearchBarDelegate {
     @IBOutlet var amountSlider: UISlider!
     @IBOutlet var sendBtn: UIButton!
     @IBOutlet var searchBar: UISearchBar!
+    
+    @IBOutlet var dollarLabel: UILabel!
+    @IBOutlet var centsLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCustomBackButton("X")
@@ -87,15 +90,28 @@ class DDSendViewController: UIViewController, UISearchBarDelegate {
         if self.amount != 1.00 {
             let amt = Int(self.amount * 100)
             self.sendBtn.setTitle("SEND \(String(format: "%d", amt))¢", for: .normal)
+            self.dollarLabel.text = "0"
+            
+            if self.amount < 0.1 {
+                self.centsLabel.text = String(format: "0%@", String(format: "%d", amt))
+            } else {
+                self.centsLabel.text = String(format: "%d", amt)
+            }
             
             if self.sendBtn.currentTitle == "SEND 0¢" {
                 self.sendBtn.setTitle("SEND 1¢", for: .normal)
+                self.centsLabel.text = "01"
+
                 self.sendBtn.isEnabled = false
             } else {
                 self.sendBtn.isEnabled = true
             }
+            
         } else {
             self.sendBtn.setTitle("SEND $\(String(format: "%.2f", self.amount))", for: .normal)
+            self.centsLabel.text = "00"
+            self.dollarLabel.text = "1"
+
         }
         
     }

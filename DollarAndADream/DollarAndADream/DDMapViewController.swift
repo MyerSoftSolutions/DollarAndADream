@@ -59,7 +59,6 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.latestLocation = locations.last!
 //        print(self.latestLocation)
-//        MBProgressHUD.hideAllHUDs(for: self.checkinMapView, animated: true)
         
         mapView.setCenter(CLLocationCoordinate2DMake(latestLocation.coordinate.latitude, latestLocation.coordinate.longitude), animated: true)
 
@@ -75,6 +74,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         let savedRegion = MKCoordinateRegion(center: center, span: span)
         
         self.mapView.setRegion(savedRegion, animated: false)
+        
         let camera = MKMapCamera(lookingAtCenter: center, fromEyeCoordinate: center, eyeAltitude: 1610)
         mapView.setCamera(camera, animated: true)
 

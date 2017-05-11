@@ -607,11 +607,11 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avU-EX-Phv">
-                                <rect key="frame" x="217" y="339" width="32" height="1"/>
+                                <rect key="frame" x="219" y="339" width="32" height="1"/>
                                 <color key="backgroundColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-8N-NWY">
-                                <rect key="frame" x="260" y="339" width="32" height="1"/>
+                                <rect key="frame" x="258" y="339" width="32" height="1"/>
                                 <color key="backgroundColor" red="0.61568627450000002" green="0.90980392160000001" blue="0.62745098040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJt-MV-GaT">
@@ -633,28 +633,50 @@
                                     <outlet property="delegate" destination="uvD-9d-rD3" id="Txb-M8-mLf"/>
                                 </connections>
                             </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-5p-Vhu">
+                                <rect key="frame" x="135" y="274" width="37.5" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="n5I-Jy-U27"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="64"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-Zu-70H">
+                                <rect key="frame" x="208" y="278" width="94" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="F41-2T-Dk2"/>
+                                    <constraint firstAttribute="width" constant="94" id="STm-TW-25Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="64"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g95-3U-Hkn" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="137" id="19n-ck-X3I"/>
                             <constraint firstItem="ATW-vv-F1Y" firstAttribute="top" secondItem="ST6-s9-3nA" secondAttribute="bottom" constant="77" id="1DH-jq-uSR"/>
+                            <constraint firstItem="dWF-5p-Vhu" firstAttribute="centerY" secondItem="YEF-Zu-70H" secondAttribute="centerY" id="3gG-ji-JPo"/>
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="177" id="4Pq-gm-PNc"/>
                             <constraint firstItem="Pac-Gh-0PU" firstAttribute="trailing" secondItem="ST6-s9-3nA" secondAttribute="trailing" id="5MU-yG-1mw"/>
+                            <constraint firstItem="YEF-Zu-70H" firstAttribute="leading" secondItem="dWF-5p-Vhu" secondAttribute="trailing" constant="35.5" id="6s1-tE-Uzq"/>
                             <constraint firstItem="807-OU-xiE" firstAttribute="top" secondItem="H3O-nS-UdX" secondAttribute="bottom" constant="38" id="C8I-uQ-dlL"/>
                             <constraint firstItem="avU-EX-Phv" firstAttribute="top" secondItem="zdz-8N-NWY" secondAttribute="top" id="Cb9-H3-4LL"/>
-                            <constraint firstItem="avU-EX-Phv" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="217" id="FYu-O0-dCM"/>
+                            <constraint firstItem="avU-EX-Phv" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="219" id="FYu-O0-dCM"/>
                             <constraint firstItem="807-OU-xiE" firstAttribute="leading" secondItem="H3O-nS-UdX" secondAttribute="leading" id="GBa-hD-tRd"/>
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="g95-3U-Hkn" secondAttribute="trailing" constant="8" symbolic="YES" id="IG6-yy-JVF"/>
                             <constraint firstItem="g95-3U-Hkn" firstAttribute="top" secondItem="avU-EX-Phv" secondAttribute="top" id="Ntb-gZ-gEp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zdz-8N-NWY" secondAttribute="trailing" constant="67" id="Ped-x0-Yds"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zdz-8N-NWY" secondAttribute="trailing" constant="69" id="Ped-x0-Yds"/>
                             <constraint firstItem="H3O-nS-UdX" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leadingMargin" constant="32" id="QO0-xW-kya"/>
                             <constraint firstItem="avU-EX-Phv" firstAttribute="bottom" secondItem="zdz-8N-NWY" secondAttribute="bottom" id="Rn7-rj-6mQ"/>
-                            <constraint firstItem="zdz-8N-NWY" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="260" id="SCF-iz-Z1A"/>
+                            <constraint firstItem="zdz-8N-NWY" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="258" id="SCF-iz-Z1A"/>
                             <constraint firstItem="ST6-s9-3nA" firstAttribute="top" secondItem="807-OU-xiE" secondAttribute="bottom" constant="136" id="SZ3-IC-hv2"/>
                             <constraint firstItem="ST6-s9-3nA" firstAttribute="leading" secondItem="807-OU-xiE" secondAttribute="leading" id="SjA-gV-Nj5"/>
                             <constraint firstItem="g95-3U-Hkn" firstAttribute="bottom" secondItem="yJt-MV-GaT" secondAttribute="bottom" id="VlP-6m-8aS"/>
                             <constraint firstItem="ATW-vv-F1Y" firstAttribute="width" secondItem="ST6-s9-3nA" secondAttribute="width" id="X6P-Ow-6u9"/>
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="ZZ8-BZ-6op" secondAttribute="trailing" constant="66" id="Xd9-RG-rcg"/>
+                            <constraint firstItem="zdz-8N-NWY" firstAttribute="top" secondItem="YEF-Zu-70H" secondAttribute="bottom" constant="6" id="fUG-fN-iOu"/>
                             <constraint firstItem="ST6-s9-3nA" firstAttribute="top" secondItem="g95-3U-Hkn" secondAttribute="bottom" constant="48" id="gFn-VT-ApH"/>
                             <constraint firstItem="Pac-Gh-0PU" firstAttribute="leading" secondItem="H3O-nS-UdX" secondAttribute="trailing" id="hZW-Sf-lA1"/>
                             <constraint firstItem="ZZ8-BZ-6op" firstAttribute="trailing" secondItem="807-OU-xiE" secondAttribute="trailing" id="hmk-WV-MRZ"/>
@@ -665,13 +687,16 @@
                             <constraint firstItem="ZZ8-BZ-6op" firstAttribute="top" secondItem="807-OU-xiE" secondAttribute="bottom" constant="8" id="scK-WK-X93"/>
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="bottom" secondItem="avU-EX-Phv" secondAttribute="bottom" id="tKs-pv-vVo"/>
                             <constraint firstItem="noF-3n-EcG" firstAttribute="top" secondItem="ATW-vv-F1Y" secondAttribute="bottom" constant="128" id="xGK-QU-XBB"/>
-                            <constraint firstAttribute="trailing" secondItem="avU-EX-Phv" secondAttribute="trailing" constant="126" id="yG0-le-dcS"/>
+                            <constraint firstAttribute="trailing" secondItem="avU-EX-Phv" secondAttribute="trailing" constant="124" id="yG0-le-dcS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="ST6-s9-3nA" secondAttribute="trailing" constant="31" id="yrh-K4-j0v"/>
+                            <constraint firstItem="dWF-5p-Vhu" firstAttribute="leading" secondItem="ZZ8-BZ-6op" secondAttribute="trailing" constant="24" id="zBw-bz-Lrb"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Send $" id="9RI-1g-cQF"/>
                     <connections>
                         <outlet property="amountSlider" destination="ST6-s9-3nA" id="wJl-3n-YNl"/>
+                        <outlet property="centsLabel" destination="YEF-Zu-70H" id="mDy-uL-6Ae"/>
+                        <outlet property="dollarLabel" destination="dWF-5p-Vhu" id="urS-oV-1es"/>
                         <outlet property="searchBar" destination="Pac-Gh-0PU" id="HcE-8u-tua"/>
                         <outlet property="sendBtn" destination="ATW-vv-F1Y" id="QB0-Rp-v1I"/>
                     </connections>
