@@ -81,12 +81,16 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
         let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
         }
         let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
-            self.namesArray.append((alertController.textFields?.first?.text!)!)
+            
+            self.namesArray.insert((alertController.textFields?.first?.text!)!, at: 0)
+//            self.namesArray.append((alertController.textFields?.first?.text!)!)
             let formatter = DateFormatter()
             formatter.dateFormat = "MMM dd, yyyy"
 
             let myString = formatter.string(from: Date())
-            self.sinceArray.append(myString)
+            self.sinceArray.insert(myString, at: 0)
+
+//            self.sinceArray.append(myString)
             
             alertController.dismiss(animated: true, completion: nil)
             self.tableView.reloadData()
