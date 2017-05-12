@@ -17,7 +17,7 @@ class DDSettingsCell : UITableViewCell {
 
 class DDSettingsTableViewController: UITableViewController {
 
-    let namesArray = ["Show Account Balance", "Show Contact Information", "Switch to Giver"]
+    let namesArray = ["Switch to Giver", "Show Account Balance", "Show Contact Information", ]
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCustomBackButton("X")

@@ -10,7 +10,7 @@ import UIKit
 
 class DDSendViewController: UIViewController, UISearchBarDelegate {
     
-    var amount = 0.89
+    var amount = 1.00
 
     @IBOutlet var amountSlider: UISlider!
     @IBOutlet var sendBtn: UIButton!

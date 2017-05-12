@@ -579,7 +579,7 @@
                                 <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.69999999999999996" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ST6-s9-3nA">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ST6-s9-3nA">
                                 <rect key="frame" x="46" y="388" width="284" height="31"/>
                                 <color key="minimumTrackTintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="maximumTrackTintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -595,7 +595,7 @@
                                     <constraint firstAttribute="height" constant="44" id="Jmi-Rf-70x"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="SEND 89¢">
+                                <state key="normal" title="SEND $1.00">
                                     <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -646,7 +646,7 @@
                                     <outlet property="delegate" destination="uvD-9d-rD3" id="Txb-M8-mLf"/>
                                 </connections>
                             </searchBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-5p-Vhu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-5p-Vhu">
                                 <rect key="frame" x="135" y="274" width="37.5" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="n5I-Jy-U27"/>
@@ -655,7 +655,7 @@
                                 <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="89" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-Zu-70H">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-Zu-70H">
                                 <rect key="frame" x="208" y="278" width="94" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="F41-2T-Dk2"/>
@@ -1042,7 +1042,7 @@
                                             <constraint firstAttribute="height" constant="1" id="jhC-2I-Lxd"/>
                                         </constraints>
                                     </view>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-kc-GAD">
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Exn-kc-GAD">
                                         <rect key="frame" x="45" y="301" width="279" height="29"/>
                                         <segments>
                                             <segment title="GIVER"/>
