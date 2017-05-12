@@ -59,13 +59,43 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         self.createCustomBackButton("X")
+        
+//        var image = UIImage(named: "plus")
+//        image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.plain, target: self, action: #selector(DDFavesTableViewController.addFavorite))
+        
+        let addFaveBtn = UIBarButtonItem(title: "+", style: UIBarButtonItemStyle.done, target: self, action: #selector(DDFavesTableViewController.addFavorite))
+        self.navigationItem.rightBarButtonItem = addFaveBtn
 
+        
         self.tableView.separatorStyle = .none
         self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
     }
+    
+    func addFavorite() {
+        let alertController = UIAlertController(title: "Please", message: "enter username", preferredStyle: UIAlertControllerStyle.alert)
+        alertController.addTextField { (textField : UITextField) -> Void in
+            textField.placeholder = "username"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) { (result : UIAlertAction) -> Void in
+        }
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) { (result : UIAlertAction) -> Void in
+            self.namesArray.append((alertController.textFields?.first?.text!)!)
+            let formatter = DateFormatter()
+            formatter.dateFormat = "MMM dd, yyyy"
 
+            let myString = formatter.string(from: Date())
+            self.sinceArray.append(myString)
+            
+            alertController.dismiss(animated: true, completion: nil)
+            self.tableView.reloadData()
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(okAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     @IBAction func schedulePayTapped(_ sender: UIButton) {
         /*Grab the superView of the sender and cast it to a DDFavesCell; then get the indexPath of that Cell from the tableView and grab that Favorite from the datasource array and prefill the modal for scheduling a payment with his/her info*/
         
