@@ -14,6 +14,49 @@ class CustomPointAnnotation : MKPointAnnotation {
     var pinImageName : String!
 }
 
+class DDAnnotation: NSObject, MKAnnotation {
+    
+    var coordinate: CLLocationCoordinate2D
+    var name: String!
+    var hometown: String!
+    var recType: String!
+    var descr: String!
+    var image: UIImage!
+
+    
+    init(coordinate: CLLocationCoordinate2D) {
+        self.coordinate = coordinate
+    }
+}
+
+class AnnotationView: MKAnnotationView
+{
+    override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let hitView = super.hitTest(point, with: event)
+        if (hitView != nil)
+        {
+            self.superview?.bringSubview(toFront: self)
+        }
+        return hitView
+    }
+    
+    override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
+        let rect = self.bounds;
+        var isInside: Bool = rect.contains(point);
+        if(!isInside)
+        {
+            for view in self.subviews
+            {
+                isInside = view.frame.contains(point);
+                if isInside
+                {
+                    break;
+                }
+            }
+        }
+        return isInside;
+    }
+}
 class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet var mapView: MKMapView!
@@ -22,6 +65,12 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     @IBOutlet var receiverTypeLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     
+    
+    let names = ["James Early", "Greg Ang", "Jess T", "MannyM"]
+    let towns = ["Riverdale, Ga", "Washington, D.C.", "Atlantic City, NJ", "Nome, VA"]
+    let recTypes = ["Entrepreneur", "Education", "Education", "Person in Need"]
+    let descs = ["Building a dream that will push the culture", "Education is my most important priority. Thanks in advance", "Working to Graduate and transform my industry!", "I Need your help to build back my ability to provide"]
+
     let locationMan = CLLocationManager()
     var latestLocation = CLLocation()
     
@@ -66,7 +115,6 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         mapView.setCenter(CLLocationCoordinate2DMake(latestLocation.coordinate.latitude, latestLocation.coordinate.longitude), animated: true)
 
         let checkinPin = MKPointAnnotation()
-//        checkinPin.coordinate = CLLocationCoordinate2DMake(latestLocation.coordinate.latitude, latestLocation.coordinate.longitude)
         checkinPin.coordinate = latestLocation.coordinate
         checkinPin.title = nil
         mapView.addAnnotation(checkinPin)
@@ -74,25 +122,35 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
         let center = CLLocationCoordinate2D(latitude: self.latestLocation.coordinate.latitude, longitude: self.latestLocation.coordinate.longitude)
         
-        let info = CustomPointAnnotation()
-        info.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude - CLLocationDegrees(exactly: 0.003)!,self.latestLocation.coordinate.longitude + CLLocationDegrees(exactly: 0.003)!)
-        let info2 = CustomPointAnnotation()
-        info2.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude - CLLocationDegrees(exactly: 0.002)!,self.latestLocation.coordinate.longitude + CLLocationDegrees(exactly: 0.002)!)
-        let info3 = CustomPointAnnotation()
-        info3.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.0023)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.003)!)
-        let info4 = CustomPointAnnotation()
-        info4.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.002)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.00175)!)
-        let info5 = CustomPointAnnotation()
-        info5.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.0012)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.00245)!)
+        
+        let point = DDAnnotation(coordinate: CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude - CLLocationDegrees(exactly: 0.003)!,self.latestLocation.coordinate.longitude + CLLocationDegrees(exactly: 0.003)!))
+        point.name = names[0]
+        point.hometown = towns[0]
+        point.recType = recTypes[0]
+        point.descr = descs[0]
+        mapView.addAnnotation(point)
+
+        let point2 = DDAnnotation(coordinate: CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude - CLLocationDegrees(exactly: 0.002)!,self.latestLocation.coordinate.longitude + CLLocationDegrees(exactly: 0.002)!))
+        point2.name = names[1]
+        point2.hometown = towns[1]
+        point2.recType = recTypes[1]
+        point2.descr = descs[1]
+        mapView.addAnnotation(point2)
+        
+        let point3 = DDAnnotation(coordinate: CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.0023)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.003)!))
+        point3.name = names[2]
+        point3.hometown = towns[2]
+        point3.recType = recTypes[2]
+        point3.descr = descs[2]
+        mapView.addAnnotation(point3)
 
 
-        mapView.addAnnotation(info)
-        mapView.addAnnotation(info2)
-        mapView.addAnnotation(info3)
-        mapView.addAnnotation(info4)
-        mapView.addAnnotation(info5)
-
-
+        let point4 = DDAnnotation(coordinate: CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.002)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.00175)!))
+        point4.name = names[3]
+        point4.hometown = towns[3]
+        point4.recType = recTypes[3]
+        point4.descr = descs[3]
+        mapView.addAnnotation(point4)
 
         let savedRegion = MKCoordinateRegion(center: center, span: span)
         
@@ -107,18 +165,19 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         
-        if (annotation is CustomPointAnnotation) {
+        if (annotation is DDAnnotation) {
             let reuseId = "Location"
             
             var anView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
             if anView == nil {
-                anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-                anView!.canShowCallout = true
+                anView = AnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                anView?.canShowCallout = false
             }
             else {
                 anView!.annotation = annotation
+                anView?.canShowCallout = false
+
             }
-            let cpa = annotation as! CustomPointAnnotation
             anView!.image = UIImage(named: "star")
             
             return anView
@@ -130,6 +189,23 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         }
     }
 
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        // 1
+        if view.annotation is MKUserLocation
+        {
+            // Don't proceed with custom callout
+            return
+        }
+        // 2
+        let annotation = view.annotation as! DDAnnotation
+        
+        self.nameLabel.text = annotation.name
+        self.locationLabel.text = annotation.hometown
+        self.receiverTypeLabel.text = annotation.recType
+        self.descriptionLabel.text = annotation.descr
+        
+    }
+    
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let mRect = self.mapView.visibleMapRect
         let eastMapPoint = MKMapPointMake(MKMapRectGetMinX(mRect), MKMapRectGetMidY(mRect))
