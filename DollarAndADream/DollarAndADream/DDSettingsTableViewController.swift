@@ -71,6 +71,12 @@ class DDSettingsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsCell", for: indexPath) as! DDSettingsCell
         cell.titleLabel.text = namesArray[indexPath.row]
         
+        if indexPath.row == 1 {
+            let opened : Bool = UserDefaults.standard.bool(forKey: "showBalance" )
+            cell.toggleSwitch.isOn = opened
+        } else if indexPath.row == 2 {
+        
+        }
 
         // Configure the cell...
 
