@@ -10,6 +10,10 @@ import UIKit
 import MapKit
 import CoreLocation
 
+class CustomPointAnnotation : MKPointAnnotation {
+    var pinImageName : String!
+}
+
 class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet var mapView: MKMapView!
@@ -27,6 +31,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         locationMan.delegate = self
         mapView.delegate = self
+        mapView.showsUserLocation = true
         
         locationMan.requestAlwaysAuthorization()
 
@@ -49,8 +54,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         if status == .authorizedAlways || status == .authorizedWhenInUse {
             manager.distanceFilter = kCLDistanceFilterNone
             manager.desiredAccuracy = kCLLocationAccuracyKilometer
-            //			manager.startUpdatingLocation()
-//            MBProgressHUD.showAdded(to: self.checkinMapView, animated: true)
+       
             manager.requestLocation()
             
         }
@@ -58,7 +62,6 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         self.latestLocation = locations.last!
-//        print(self.latestLocation)
         
         mapView.setCenter(CLLocationCoordinate2DMake(latestLocation.coordinate.latitude, latestLocation.coordinate.longitude), animated: true)
 
@@ -70,6 +73,26 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         let span = MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
         let center = CLLocationCoordinate2D(latitude: self.latestLocation.coordinate.latitude, longitude: self.latestLocation.coordinate.longitude)
+        
+        let info = CustomPointAnnotation()
+        info.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude - CLLocationDegrees(exactly: 0.003)!,self.latestLocation.coordinate.longitude + CLLocationDegrees(exactly: 0.003)!)
+        let info2 = CustomPointAnnotation()
+        info2.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude - CLLocationDegrees(exactly: 0.002)!,self.latestLocation.coordinate.longitude + CLLocationDegrees(exactly: 0.002)!)
+        let info3 = CustomPointAnnotation()
+        info3.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.0023)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.003)!)
+        let info4 = CustomPointAnnotation()
+        info4.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.002)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.00175)!)
+        let info5 = CustomPointAnnotation()
+        info5.coordinate = CLLocationCoordinate2DMake(self.latestLocation.coordinate.latitude + CLLocationDegrees(exactly: 0.0012)!,self.latestLocation.coordinate.longitude - CLLocationDegrees(exactly: 0.00245)!)
+
+
+        mapView.addAnnotation(info)
+        mapView.addAnnotation(info2)
+        mapView.addAnnotation(info3)
+        mapView.addAnnotation(info4)
+        mapView.addAnnotation(info5)
+
+
 
         let savedRegion = MKCoordinateRegion(center: center, span: span)
         
@@ -81,6 +104,32 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
     }
     
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        
+        if (annotation is CustomPointAnnotation) {
+            let reuseId = "Location"
+            
+            var anView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId)
+            if anView == nil {
+                anView = MKAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+                anView!.canShowCallout = true
+            }
+            else {
+                anView!.annotation = annotation
+            }
+            let cpa = annotation as! CustomPointAnnotation
+            anView!.image = UIImage(named: "star")
+            
+            return anView
+        } else {
+            let ann = MKAnnotationView()
+            ann.image = UIImage(named: "Map_pin")
+            
+            return ann
+        }
+    }
+
     func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
         let mRect = self.mapView.visibleMapRect
         let eastMapPoint = MKMapPointMake(MKMapRectGetMinX(mRect), MKMapRectGetMidY(mRect))
@@ -92,64 +141,4 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         print(error.localizedDescription)
     }
     
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        let ann = MKAnnotationView()
-        ann.image = UIImage(named: "Map_pin")
-        
-        return ann
     }
-    //MARK: MAPBOX DELEGATE METHOD
-
-//    func mapView(_ mapView: MGLMapView, imageFor annotation: MGLAnnotation) -> MGLAnnotationImage? {
-//        // Try to reuse the existing ‘pisa’ annotation image, if it exists.
-//        var annotationImage = mapView.dequeueReusableAnnotationImage(withIdentifier: "pin")
-//        
-//        if annotationImage == nil {
-//            // Leaning Tower of Pisa by Stefan Spieler from the Noun Project.
-//            let image = UIImage(named: "CheckinPin")!
-//            var newImage : UIImage = self.ResizeImage(image, targetSize: CGSize(width: 69.0, height: 60.0))
-//            
-//            // The anchor point of an annotation is currently always the center. To
-//            // shift the anchor point to the bottom of the annotation, the image
-//            // asset includes transparent bottom padding equal to the original image
-//            // height.
-//            //
-//            // To make this padding non-interactive, we create another image object
-//            // with a custom alignment rect that excludes the padding.
-//            newImage = newImage.withAlignmentRectInsets(UIEdgeInsetsMake(0, 0, newImage.size.height/2, 0))
-//            
-//            // Initialize the ‘pisa’ annotation image with the UIImage we just loaded.
-//            annotationImage = MGLAnnotationImage(image: newImage, reuseIdentifier: "pin")
-//        }
-//        
-//        return annotationImage
-//    }
-    
-    func ResizeImage(_ image: UIImage, targetSize: CGSize) -> UIImage {
-        let size = image.size
-        
-        let widthRatio  = targetSize.width  / image.size.width
-        let heightRatio = targetSize.height / image.size.height
-        
-        // Figure out what our orientation is, and use that to form the rectangle
-        var newSize: CGSize
-        if(widthRatio > heightRatio) {
-            newSize = CGSize(width: size.width * heightRatio, height: size.height * heightRatio)
-        } else {
-            newSize = CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
-        }
-        
-        // This is the rect that we've calculated out and this is what is actually used below
-        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
-        
-        // Actually do the resizing to the rect using the ImageContext stuff
-        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
-        image.draw(in: rect)
-        let newImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
-        return newImage!
-    }
-
-
-}
