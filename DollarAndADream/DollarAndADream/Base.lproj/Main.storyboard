@@ -153,7 +153,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="656"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Akk-Q7-fAt">
-                                        <rect key="frame" x="48" y="-33" width="85" height="22"/>
+                                        <rect key="frame" x="48" y="-33" width="85" height="18"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -307,6 +307,7 @@
                                     <constraint firstItem="OMl-h8-ZMf" firstAttribute="top" secondItem="WWy-Lw-p15" secondAttribute="bottom" constant="7" id="9cj-e3-XZS"/>
                                     <constraint firstAttribute="trailing" secondItem="MyT-P8-5s6" secondAttribute="trailing" constant="48" id="B0p-dh-843"/>
                                     <constraint firstItem="DYl-5x-j7c" firstAttribute="width" secondItem="8QN-bi-fGk" secondAttribute="width" id="BVT-Hd-Hue"/>
+                                    <constraint firstItem="maa-Kv-80A" firstAttribute="top" secondItem="ffh-xl-roC" secondAttribute="bottom" constant="20" id="Drm-Dt-Mi8"/>
                                     <constraint firstItem="asf-7x-OjU" firstAttribute="top" secondItem="DYl-5x-j7c" secondAttribute="bottom" constant="8" id="HUU-R2-hEU"/>
                                     <constraint firstItem="OMl-h8-ZMf" firstAttribute="leading" secondItem="WWy-Lw-p15" secondAttribute="leading" id="Ha6-WY-KhI"/>
                                     <constraint firstItem="ssj-Nl-GlF" firstAttribute="leading" secondItem="Akk-Q7-fAt" secondAttribute="leading" id="KAA-xK-wps"/>
@@ -352,6 +353,7 @@
                             <constraint firstItem="z2w-rg-uMj" firstAttribute="width" secondItem="iww-TQ-U4y" secondAttribute="width" id="Rqi-2W-UCb"/>
                             <constraint firstItem="z2w-rg-uMj" firstAttribute="top" secondItem="3pv-XQ-7Kl" secondAttribute="bottom" id="c8F-l5-Kw7"/>
                             <constraint firstItem="z2w-rg-uMj" firstAttribute="leading" secondItem="iww-TQ-U4y" secondAttribute="leading" id="vAM-Sj-HsZ"/>
+                            <constraint firstItem="z2w-rg-uMj" firstAttribute="height" secondItem="iww-TQ-U4y" secondAttribute="height" id="zXF-r1-C3p"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign Up" id="vZr-ZH-v2j"/>
@@ -360,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CX2-dg-LmM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1855" y="184"/>
+            <point key="canvasLocation" x="-1855.2" y="183.50824587706148"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="F98-fF-ABv">
@@ -647,7 +649,7 @@
                                 </connections>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-5p-Vhu">
-                                <rect key="frame" x="135" y="274" width="37.5" height="63"/>
+                                <rect key="frame" x="135" y="274" width="38" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="n5I-Jy-U27"/>
                                 </constraints>
@@ -665,6 +667,15 @@
                                 <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: $356.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2if-oA-YXm">
+                                <rect key="frame" x="220" y="557" width="108" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="0bE-50-prf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="13"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -674,6 +685,7 @@
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="177" id="4Pq-gm-PNc"/>
                             <constraint firstItem="Pac-Gh-0PU" firstAttribute="trailing" secondItem="ST6-s9-3nA" secondAttribute="trailing" id="5MU-yG-1mw"/>
                             <constraint firstItem="YEF-Zu-70H" firstAttribute="leading" secondItem="dWF-5p-Vhu" secondAttribute="trailing" constant="35.5" id="6s1-tE-Uzq"/>
+                            <constraint firstItem="2if-oA-YXm" firstAttribute="trailing" secondItem="ATW-vv-F1Y" secondAttribute="trailing" id="7uL-kz-kUa"/>
                             <constraint firstItem="807-OU-xiE" firstAttribute="top" secondItem="H3O-nS-UdX" secondAttribute="bottom" constant="38" id="C8I-uQ-dlL"/>
                             <constraint firstItem="avU-EX-Phv" firstAttribute="top" secondItem="zdz-8N-NWY" secondAttribute="top" id="Cb9-H3-4LL"/>
                             <constraint firstItem="avU-EX-Phv" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="219" id="FYu-O0-dCM"/>
@@ -691,6 +703,7 @@
                             <constraint firstItem="yJt-MV-GaT" firstAttribute="leading" secondItem="ZZ8-BZ-6op" secondAttribute="trailing" constant="66" id="Xd9-RG-rcg"/>
                             <constraint firstItem="zdz-8N-NWY" firstAttribute="top" secondItem="YEF-Zu-70H" secondAttribute="bottom" constant="6" id="fUG-fN-iOu"/>
                             <constraint firstItem="ST6-s9-3nA" firstAttribute="top" secondItem="g95-3U-Hkn" secondAttribute="bottom" constant="48" id="gFn-VT-ApH"/>
+                            <constraint firstItem="2if-oA-YXm" firstAttribute="top" secondItem="ATW-vv-F1Y" secondAttribute="bottom" constant="18" id="h5Q-S6-ymk"/>
                             <constraint firstItem="Pac-Gh-0PU" firstAttribute="leading" secondItem="H3O-nS-UdX" secondAttribute="trailing" id="hZW-Sf-lA1"/>
                             <constraint firstItem="ZZ8-BZ-6op" firstAttribute="trailing" secondItem="807-OU-xiE" secondAttribute="trailing" id="hmk-WV-MRZ"/>
                             <constraint firstItem="Pac-Gh-0PU" firstAttribute="top" secondItem="r2I-ef-P7y" secondAttribute="bottom" constant="70" id="l1J-5l-N7n"/>
@@ -708,6 +721,7 @@
                     <navigationItem key="navigationItem" title="Send $" id="9RI-1g-cQF"/>
                     <connections>
                         <outlet property="amountSlider" destination="ST6-s9-3nA" id="wJl-3n-YNl"/>
+                        <outlet property="balanceLabel" destination="2if-oA-YXm" id="8ab-yT-jbf"/>
                         <outlet property="centsLabel" destination="YEF-Zu-70H" id="mDy-uL-6Ae"/>
                         <outlet property="dollarLabel" destination="dWF-5p-Vhu" id="urS-oV-1es"/>
                         <outlet property="searchBar" destination="Pac-Gh-0PU" id="HcE-8u-tua"/>
@@ -1049,6 +1063,9 @@
                                             <segment title="RECEIVER"/>
                                         </segments>
                                         <color key="tintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="segmentValueChanged:" destination="P9a-mG-1Fd" eventType="valueChanged" id="K5j-PO-ckf"/>
+                                        </connections>
                                     </segmentedControl>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jN-6C-ZcM">
                                         <rect key="frame" x="45" y="463" width="80" height="22"/>
@@ -1092,6 +1109,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKz-J5-dzj">
                                                 <rect key="frame" x="78" y="8" width="84" height="22"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="401-wf-FdG"/>
                                                     <constraint firstAttribute="width" constant="84" id="7Wk-vW-lcb"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
@@ -1103,6 +1121,7 @@
                                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="201" id="FqG-nk-LCu"/>
+                                                    <constraint firstAttribute="height" constant="30" id="Rwr-mf-OWH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="10"/>
                                                 <state key="normal" title="NON-PROFIT">
@@ -1184,6 +1203,13 @@
                     <navigationItem key="navigationItem" title="Sign Up" id="cnL-Kd-Mix"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="679"/>
+                    <connections>
+                        <outlet property="accountTypeSegControl" destination="Exn-kc-GAD" id="3Er-VD-13Q"/>
+                        <outlet property="recTypeButtonHeightCon" destination="Rwr-mf-OWH" id="i1S-d0-ycJ"/>
+                        <outlet property="recTypeLabelHeightCon" destination="401-wf-FdG" id="OpA-D8-yoD"/>
+                        <outlet property="scrollView" destination="2vs-Kl-rU4" id="HeV-tc-QCm"/>
+                        <outlet property="segBottomToSeparatorCon" destination="w4r-To-qdq" id="Hfd-PR-KO6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Puv-Da-VXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

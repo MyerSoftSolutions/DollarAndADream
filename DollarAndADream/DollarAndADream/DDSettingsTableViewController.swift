@@ -36,7 +36,29 @@ class DDSettingsTableViewController: UITableViewController {
     }
 
     @IBAction func toggleTapped(_ sender: UISwitch) {
+        let cell = sender.superview?.superview as! DDSettingsCell
+        let idxPath = tableView.indexPath(for: cell)
         
+        switch idxPath!.row {
+        case 1:
+            if sender.isOn {
+                UserDefaults.standard.set(true, forKey: "showBalance")
+            } else {
+                UserDefaults.standard.set(false, forKey: "showBalance")
+            }
+            UserDefaults.standard.synchronize()
+            break
+        case 2:
+            if sender.isOn {
+                UserDefaults.standard.set(true, forKey: "showInfo")
+            } else {
+                UserDefaults.standard.set(false, forKey: "showInfo")
+            }
+            UserDefaults.standard.synchronize()
+            break
+        default:
+            break
+        }
     }
     // MARK: - Table view data source
 

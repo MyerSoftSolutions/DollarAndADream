@@ -18,13 +18,17 @@ class DDSendViewController: UIViewController, UISearchBarDelegate {
     
     @IBOutlet var dollarLabel: UILabel!
     @IBOutlet var centsLabel: UILabel!
+    @IBOutlet var balanceLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCustomBackButton("X")
         self.amountSlider.minimumValue = 0.01
         
         self.searchBar.returnKeyType = UIReturnKeyType.done
-
+        let opened : Bool = UserDefaults.standard.bool(forKey: "showBalance" )
+        self.balanceLabel.isHidden = !opened
+        
         // Do any additional setup after loading the view.
     }
 
