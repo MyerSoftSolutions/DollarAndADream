@@ -26,6 +26,8 @@
 		D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727B1EB14964001E353A /* DDHomeViewController.swift */; };
 		D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
 		D92172801EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
+		D93B7C861ED5233C0080F3A0 /* DDQuickSendModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */; };
+		D93B7C871ED5233C0080F3A0 /* DDQuickSendModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */; };
 		D94E7BBF1EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */; };
 		D94E7BC01EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */; };
 		D94E7BC21EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */; };
@@ -37,6 +39,10 @@
 		D9618E451EB8BBFF00074CDC /* GrandHotel-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */; };
 		D9618E481EB8C17100074CDC /* Glegoo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E461EB8C17100074CDC /* Glegoo-Bold.ttf */; };
 		D9618E491EB8C17100074CDC /* Glegoo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9618E471EB8C17100074CDC /* Glegoo-Regular.ttf */; };
+		D974EB831EE317F500ADA6B3 /* DDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974EB821EE317F500ADA6B3 /* DDUtils.swift */; };
+		D974EB841EE317F500ADA6B3 /* DDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974EB821EE317F500ADA6B3 /* DDUtils.swift */; };
+		D974EB861EE32BDE00ADA6B3 /* DDQuickSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974EB851EE32BDE00ADA6B3 /* DDQuickSendViewController.swift */; };
+		D974EB871EE32BDE00ADA6B3 /* DDQuickSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D974EB851EE32BDE00ADA6B3 /* DDQuickSendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,7 @@
 		D92172781EB14934001E353A /* DDSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSignUpViewController.swift; sourceTree = "<group>"; };
 		D921727B1EB14964001E353A /* DDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeViewController.swift; sourceTree = "<group>"; };
 		D921727E1EB14989001E353A /* DDSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSendViewController.swift; sourceTree = "<group>"; };
+		D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDQuickSendModalViewController.swift; sourceTree = "<group>"; };
 		D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDReceivedTableViewController.swift; sourceTree = "<group>"; };
 		D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFavesTableViewController.swift; sourceTree = "<group>"; };
 		D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKSwipeTableViewCell.swift; sourceTree = "<group>"; };
@@ -75,6 +82,8 @@
 		D9618E441EB8BBFF00074CDC /* GrandHotel-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.otf"; sourceTree = "<group>"; };
 		D9618E461EB8C17100074CDC /* Glegoo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Bold.ttf"; sourceTree = "<group>"; };
 		D9618E471EB8C17100074CDC /* Glegoo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glegoo-Regular.ttf"; sourceTree = "<group>"; };
+		D974EB821EE317F500ADA6B3 /* DDUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDUtils.swift; sourceTree = "<group>"; };
+		D974EB851EE32BDE00ADA6B3 /* DDQuickSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDQuickSendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +138,15 @@
 			isa = PBXGroup;
 			children = (
 				D92172521EB14764001E353A /* AppDelegate.swift */,
+				D974EB821EE317F500ADA6B3 /* DDUtils.swift */,
 				D92172751EB14910001E353A /* DDLoginViewController.swift */,
 				D9618E411EB792DA00074CDC /* UIViewControllerExtension.swift */,
 				D92172781EB14934001E353A /* DDSignUpViewController.swift */,
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
 				D921727E1EB14989001E353A /* DDSendViewController.swift */,
+				D974EB851EE32BDE00ADA6B3 /* DDQuickSendViewController.swift */,
 				D92172561EB14764001E353A /* Main.storyboard */,
+				D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */,
 				D904B15A1EC165D8006525C1 /* DDSettingsTableViewController.swift */,
 				D904B1561EC15F75006525C1 /* DDMapViewController.swift */,
 				D94E7BC41EBA1A9B00042B2C /* PKSwipeTableViewCell.swift */,
@@ -285,9 +297,12 @@
 				D904B15B1EC165D8006525C1 /* DDSettingsTableViewController.swift in Sources */,
 				D94E7BBF1EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */,
 				D94E7BC21EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */,
+				D974EB861EE32BDE00ADA6B3 /* DDQuickSendViewController.swift in Sources */,
 				D92172791EB14934001E353A /* DDSignUpViewController.swift in Sources */,
 				D9618E421EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */,
 				D92172531EB14764001E353A /* AppDelegate.swift in Sources */,
+				D93B7C861ED5233C0080F3A0 /* DDQuickSendModalViewController.swift in Sources */,
+				D974EB831EE317F500ADA6B3 /* DDUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,9 +317,12 @@
 				D94E7BC01EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */,
 				D9618E431EB792DA00074CDC /* UIViewControllerExtension.swift in Sources */,
 				D921726B1EB14764001E353A /* DollarAndADreamTests.swift in Sources */,
+				D93B7C871ED5233C0080F3A0 /* DDQuickSendModalViewController.swift in Sources */,
 				D92172801EB14989001E353A /* DDSendViewController.swift in Sources */,
+				D974EB841EE317F500ADA6B3 /* DDUtils.swift in Sources */,
 				D94E7BC31EBA19D500042B2C /* DDFavesTableViewController.swift in Sources */,
 				D921727A1EB14934001E353A /* DDSignUpViewController.swift in Sources */,
+				D974EB871EE32BDE00ADA6B3 /* DDQuickSendViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

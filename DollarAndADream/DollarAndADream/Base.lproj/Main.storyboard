@@ -70,8 +70,11 @@
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-1s-woZ">
+                                <rect key="frame" x="48" y="62" width="279" height="44"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgd-OR-N4J">
-                                <rect key="frame" x="48" y="402" width="279" height="44"/>
+                                <rect key="frame" x="48" y="369" width="279" height="44"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="v0R-em-C1S"/>
@@ -86,7 +89,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-9o-vBW">
-                                <rect key="frame" x="48" y="454" width="60" height="38"/>
+                                <rect key="frame" x="48" y="421" width="60" height="38"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="EvS-8Q-bgN"/>
                                     <constraint firstAttribute="height" constant="38" id="M3B-hb-tk4"/>
@@ -100,9 +103,6 @@
                                     <segue destination="WDx-7F-08b" kind="show" identifier="SignUpSegue" id="hBx-Sy-R4w"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-1s-woZ">
-                                <rect key="frame" x="48" y="62" width="279" height="44"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.062745098039215685" green="0.094117647058823528" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -115,7 +115,7 @@
                             <constraint firstItem="c3M-9l-jg4" firstAttribute="top" secondItem="h5i-Hz-oOh" secondAttribute="bottom" id="OmR-Pa-X21"/>
                             <constraint firstItem="e8d-1s-woZ" firstAttribute="leading" secondItem="J4D-Cd-5em" secondAttribute="leading" id="SiR-Gl-1ht"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c3M-9l-jg4" secondAttribute="trailing" constant="32" id="U2k-ke-4Is"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jea-9o-vBW" secondAttribute="bottom" constant="175" id="V1h-oF-o7K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jea-9o-vBW" secondAttribute="bottom" constant="208" id="V1h-oF-o7K"/>
                             <constraint firstItem="c3M-9l-jg4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="WJP-mI-lDI"/>
                             <constraint firstItem="xgd-OR-N4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wkt-o0-zPB"/>
                             <constraint firstItem="lHS-Ed-mqT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="YKb-01-Fn8"/>
@@ -124,7 +124,7 @@
                             <constraint firstItem="Jea-9o-vBW" firstAttribute="leading" secondItem="xgd-OR-N4J" secondAttribute="leading" id="kqZ-6m-fh0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="xgd-OR-N4J" secondAttribute="trailing" constant="32" id="mFf-P2-yot"/>
                             <constraint firstItem="h5i-Hz-oOh" firstAttribute="top" secondItem="lHS-Ed-mqT" secondAttribute="bottom" constant="15" id="q2r-QR-GMt"/>
-                            <constraint firstItem="xgd-OR-N4J" firstAttribute="top" secondItem="c3M-9l-jg4" secondAttribute="bottom" constant="92" id="utZ-RK-sa1"/>
+                            <constraint firstItem="xgd-OR-N4J" firstAttribute="top" secondItem="c3M-9l-jg4" secondAttribute="bottom" constant="59" id="utZ-RK-sa1"/>
                             <constraint firstItem="J4D-Cd-5em" firstAttribute="top" secondItem="e8d-1s-woZ" secondAttribute="bottom" constant="87" id="vWs-zt-plb"/>
                         </constraints>
                     </view>
@@ -553,10 +553,10 @@
             </objects>
             <point key="canvasLocation" x="508" y="-237"/>
         </scene>
-        <!--Send $-->
+        <!--DDSendViewController-->
         <scene sceneID="egf-Sq-rNX">
             <objects>
-                <viewController id="uvD-9d-rD3" customClass="DDSendViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DDSendViewController" title="DDSendViewController" id="uvD-9d-rD3" customClass="DDSendViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="r2I-ef-P7y"/>
                         <viewControllerLayoutGuide type="bottom" id="noF-3n-EcG"/>
@@ -649,7 +649,7 @@
                                 </connections>
                             </searchBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWF-5p-Vhu">
-                                <rect key="frame" x="135" y="274" width="38" height="63"/>
+                                <rect key="frame" x="135" y="274" width="37.5" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="n5I-Jy-U27"/>
                                 </constraints>
@@ -658,7 +658,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YEF-Zu-70H">
-                                <rect key="frame" x="208" y="278" width="94" height="55"/>
+                                <rect key="frame" x="207.5" y="278" width="94" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="F41-2T-Dk2"/>
                                     <constraint firstAttribute="width" constant="94" id="STm-TW-25Z"/>
@@ -668,7 +668,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance: $356.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2if-oA-YXm">
-                                <rect key="frame" x="220" y="557" width="108" height="25"/>
+                                <rect key="frame" x="220.5" y="557" width="107.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="0bE-50-prf"/>
                                 </constraints>

@@ -93,6 +93,23 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     }
     
     @IBAction func quickSendTapped(_ sender: Any) {
+        
+//        if let quickSendView = UIApplication.shared.keyWindow!.viewWithTag(3000) {
+//            quickSendView.removeFromSuperview()
+//            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissAbandonedNotification"), object: nil)
+//            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissAbandonedTapNotification"), object: nil)
+//            
+//        }
+//        let quickSendViewModal = DDQuickSendModalViewController()
+//        quickSendViewModal.delegate = self
+//        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.dismissquickSendViewModal), name:NSNotification.Name(rawValue: "DismissAbandonedNotification"), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.dismissquickSendViewTapModal), name:NSNotification.Name(rawValue: "DismissAbandonedTapNotification"), object: nil)
+//        
+//        quickSendViewModal.view.tag = 3000
+//        UIApplication.shared.keyWindow!.addSubview(quickSendViewModal.view)
+//        self.addChildViewController(quickSendViewModal)
+//        quickSendViewModal.didMove(toParentViewController: self)
+
     }
 
     //MARK: LOCATION MANAGER
