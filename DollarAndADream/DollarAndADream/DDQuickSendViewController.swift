@@ -27,7 +27,49 @@ class DDQuickSendViewController: DDSendViewController {
     }
     
     override func sendPressed(_ sender: Any) {
-        super.sendPressed(sender)
-        NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+        if searchBar.text?.characters.count != 0 {
+            if self.amount != 1.00 {
+                let amt = Int(self.amount * 100)
+                let alertController = UIAlertController(title: "Send \(String(format: "%d", amt))¢ to \(String(describing: searchBar.text!))?", message: "", preferredStyle: UIAlertControllerStyle.alert)
+                
+                let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default)
+                {
+                    (result : UIAlertAction) -> Void in
+                    alertController.dismiss(animated: true, completion: nil)
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+                }
+                
+                let noAction = UIAlertAction(title: "No", style: UIAlertActionStyle.default)
+                {
+                    (result : UIAlertAction) -> Void in
+                    alertController.dismiss(animated: true, completion: nil)
+                }
+                alertController.addAction(noAction)
+                alertController.addAction(okAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                let alertController = UIAlertController(title: "Send $\(String(format: "%.2f", self.amount)) to \(String(describing: searchBar.text!))?", message: "", preferredStyle: UIAlertControllerStyle.alert)
+                
+                let okAction = UIAlertAction(title: "Yes", style: UIAlertActionStyle.default)
+                {
+                    (result : UIAlertAction) -> Void in
+                    alertController.dismiss(animated: true, completion: nil)
+                    NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+                    
+                }
+                
+                let noAction = UIAlertAction(title: "No", style: UIAlertActionStyle.default)
+                {
+                    (result : UIAlertAction) -> Void in
+                    alertController.dismiss(animated: true, completion: nil)
+                }
+                alertController.addAction(noAction)
+                alertController.addAction(okAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            }
+            
+        }
     }
 }
