@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DDRecTypeSelectionViewController" customModule="DollarAndADream" customModuleProvider="target">
+            <connections>
+                <outlet property="pickerView" destination="JnT-R1-crA" id="hmQ-Xs-1jt"/>
+                <outlet property="view" destination="iN0-l3-epB" id="J7F-pM-KQZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="216"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JnT-R1-crA">
+                    <rect key="frame" x="0.0" y="0.0" width="371" height="216"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ESP-OD-JQ4"/>
+                        <outlet property="delegate" destination="-1" id="doe-wS-29H"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JnT-R1-crA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="H49-2a-bWf"/>
+                <constraint firstItem="JnT-R1-crA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zx6-xc-d2S"/>
+                <constraint firstAttribute="trailing" secondItem="JnT-R1-crA" secondAttribute="trailing" id="yHi-Tp-EwB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

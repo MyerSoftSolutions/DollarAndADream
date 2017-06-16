@@ -746,11 +746,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5t-r1-VUh" id="bsA-7G-y4h">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43v-vu-S8T">
-                                            <rect key="frame" x="15" y="11" width="34.5" height="18"/>
+                                            <rect key="frame" x="15" y="11" width="37.5" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="UEk-RL-6KK"/>
                                             </constraints>
@@ -772,7 +772,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RC-YD-06C">
-                                            <rect key="frame" x="301" y="12" width="59" height="29"/>
+                                            <rect key="frame" x="296.5" y="12" width="63.5" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="Feb-1s-wPz"/>
                                             </constraints>
@@ -1128,6 +1128,9 @@
                                                 <state key="normal" title="NON-PROFIT">
                                                     <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="recTypePressed:" destination="P9a-mG-1Fd" eventType="touchUpInside" id="STW-FU-Zi0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -1207,6 +1210,7 @@
                     <size key="freeformSize" width="375" height="679"/>
                     <connections>
                         <outlet property="accountTypeSegControl" destination="Exn-kc-GAD" id="3Er-VD-13Q"/>
+                        <outlet property="recTypeBtn" destination="XxQ-ci-nSn" id="QAP-Iq-510"/>
                         <outlet property="recTypeButtonHeightCon" destination="Rwr-mf-OWH" id="i1S-d0-ycJ"/>
                         <outlet property="recTypeLabelHeightCon" destination="401-wf-FdG" id="OpA-D8-yoD"/>
                         <outlet property="recTypeView" destination="dzr-Ny-CW6" id="Ngy-hb-kBW"/>
