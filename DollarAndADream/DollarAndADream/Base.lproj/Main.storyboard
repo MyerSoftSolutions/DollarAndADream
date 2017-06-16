@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -465,7 +465,7 @@
                                     <segue destination="dMt-3z-vGe" kind="show" identifier="SettingSegue" id="A8N-I4-0hK"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLY-QF-VhH">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dollar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLY-QF-VhH">
                                 <rect key="frame" x="24" y="68" width="116" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="ZeK-k6-ASU"/>
@@ -475,7 +475,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65F-jZ-B5i">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65F-jZ-B5i">
                                 <rect key="frame" x="143" y="118" width="42" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="U9a-KH-hqc"/>
@@ -484,7 +484,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dream" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhs-dR-C8r">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dream" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhs-dR-C8r">
                                 <rect key="frame" x="224.5" y="204" width="101.5" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="FVf-ek-Qwy"/>
@@ -493,7 +493,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-fZ-Fad">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="a" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-fZ-Fad">
                                 <rect key="frame" x="166" y="139" width="53" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="EgM-SA-wg2"/>
@@ -1218,7 +1218,7 @@
         <!--User Map-->
         <scene sceneID="FTV-6u-bPn">
             <objects>
-                <viewController id="2Xx-db-MMm" customClass="DDMapViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DDMapViewController" id="2Xx-db-MMm" customClass="DDMapViewController" customModule="DollarAndADream" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xcQ-tZ-lbm"/>
                         <viewControllerLayoutGuide type="bottom" id="8X2-BT-LYH"/>
@@ -1504,7 +1504,7 @@
     <resources>
         <image name="clock" width="626" height="626"/>
         <image name="gear" width="512" height="512"/>
-        <image name="logo" width="1323" height="585"/>
-        <image name="textLogo" width="1298" height="226"/>
+        <image name="logo" width="166" height="116"/>
+        <image name="textLogo" width="279" height="44"/>
     </resources>
 </document>

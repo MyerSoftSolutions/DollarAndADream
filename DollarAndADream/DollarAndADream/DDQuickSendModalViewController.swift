@@ -9,17 +9,10 @@
 import UIKit
 import QuartzCore
 
-
-protocol DDQuickSendModalDelegate {
-    func dismissModal()
-}
-
 class DDQuickSendModalViewController: UIViewController {
     
     var quickSendView : UIView?
     var ddSendViewController : DDSendViewController?
-    var delegate : DDQuickSendModalDelegate?
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,17 +20,18 @@ class DDQuickSendModalViewController: UIViewController {
         view.backgroundColor = UIColor.init(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.4)
         ddSendViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DDSendViewController") as? DDSendViewController
         view.frame = CGRect(x: 0, y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT)
-        // Do any additional setup after loading the view.
     }
 
+//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+//        NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
+//        
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-        
         
         quickSendView = ddSendViewController?.view
         
@@ -59,16 +53,5 @@ class DDQuickSendModalViewController: UIViewController {
         ddSendViewController?.didMove(toParentViewController: self)
         
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -94,22 +94,40 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     @IBAction func quickSendTapped(_ sender: Any) {
         
-//        if let quickSendView = UIApplication.shared.keyWindow!.viewWithTag(3000) {
-//            quickSendView.removeFromSuperview()
-//            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissAbandonedNotification"), object: nil)
-//            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissAbandonedTapNotification"), object: nil)
-//            
-//        }
-//        let quickSendViewModal = DDQuickSendModalViewController()
-//        quickSendViewModal.delegate = self
-//        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.dismissquickSendViewModal), name:NSNotification.Name(rawValue: "DismissAbandonedNotification"), object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.dismissquickSendViewTapModal), name:NSNotification.Name(rawValue: "DismissAbandonedTapNotification"), object: nil)
-//        
-//        quickSendViewModal.view.tag = 3000
-//        UIApplication.shared.keyWindow!.addSubview(quickSendViewModal.view)
-//        self.addChildViewController(quickSendViewModal)
-//        quickSendViewModal.didMove(toParentViewController: self)
+        if let quickSendView = UIApplication.shared.keyWindow!.viewWithTag(1000) {
+            quickSendView.removeFromSuperview()
+            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
+            
+        }
+        let quickSendViewModal = DDQuickSendModalViewController()
+        NotificationCenter.default.addObserver(self, selector: #selector(DDMapViewController.dismissQuickSendViewModal), name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(DDMapViewController.dismissQuickSendViewTapModal), name:NSNotification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
+        
+        quickSendViewModal.view.tag = 1000
+        UIApplication.shared.keyWindow!.addSubview(quickSendViewModal.view)
+        self.addChildViewController(quickSendViewModal)
+        quickSendViewModal.didMove(toParentViewController: self)
 
+    }
+    
+    func dismissQuickSendViewModal() {
+        if let quickSendViewModal = UIApplication.shared.keyWindow!.viewWithTag(1000)  {
+            quickSendViewModal.removeFromSuperview()
+            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+              NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
+            let vc = DDMapViewController(nibName: "DDMapViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func dismissQuickSendViewTapModal(){
+        if let quickSendViewModal = UIApplication.shared.keyWindow!.viewWithTag(1000)  {
+            quickSendViewModal.removeFromSuperview()
+            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+            NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
+            
+        }
     }
 
     //MARK: LOCATION MANAGER
