@@ -745,11 +745,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5t-r1-VUh" id="bsA-7G-y4h">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43v-vu-S8T">
-                                            <rect key="frame" x="15" y="11" width="37.5" height="18"/>
+                                            <rect key="frame" x="15" y="11" width="34.5" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="UEk-RL-6KK"/>
                                             </constraints>
@@ -771,7 +771,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RC-YD-06C">
-                                            <rect key="frame" x="296.5" y="12" width="63.5" height="29"/>
+                                            <rect key="frame" x="301" y="12" width="59" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="Feb-1s-wPz"/>
                                             </constraints>
@@ -1329,6 +1329,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="aGs-py-csL" id="IkK-vx-Nr0"/>
                         <outlet property="locationLabel" destination="XEO-Ck-hBd" id="PpK-ds-L2x"/>
+                        <outlet property="lowerViewHeightCon" destination="5dz-aA-tCq" id="Pzx-lm-2EW"/>
                         <outlet property="mapView" destination="s1o-7c-0Ky" id="iqx-py-LpX"/>
                         <outlet property="nameLabel" destination="haU-0d-IeR" id="mUx-ii-pdu"/>
                         <outlet property="receiverTypeLabel" destination="ZsX-H2-zV4" id="Qjm-2k-Z6d"/>

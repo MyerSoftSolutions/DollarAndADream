@@ -65,6 +65,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     @IBOutlet var receiverTypeLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
     
+    @IBOutlet weak var lowerViewHeightCon: NSLayoutConstraint!
     
     let names = ["James Early", "Greg Ang", "Jess T", "MannyM"]
     let towns = ["Riverdale, Ga", "Washington, D.C.", "Atlantic City, NJ", "Nome, VA"]
@@ -91,6 +92,9 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+//    override func viewWillLayoutSubviews() {
+//        lowerViewHeightCon.constant = 0
+//    }
     
     @IBAction func quickSendTapped(_ sender: Any) {
         
@@ -193,7 +197,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         let camera = MKMapCamera(lookingAtCenter: center, fromEyeCoordinate: center, eyeAltitude: 1610)
         mapView.setCamera(camera, animated: true)
-
+        mapView.selectedAnnotations = [point3]
         
     }
     
@@ -233,6 +237,9 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         }
         // 2
         let annotation = view.annotation as! DDAnnotation
+        
+//        lowerViewHeightCon.constant = 178
+
         
         self.nameLabel.text = annotation.name
         self.locationLabel.text = annotation.hometown
