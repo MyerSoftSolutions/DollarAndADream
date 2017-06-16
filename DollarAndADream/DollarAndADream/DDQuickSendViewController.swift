@@ -11,14 +11,23 @@ import UIKit
 class DDQuickSendViewController: DDSendViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.amountSlider.minimumValue = 0.01
+        
+        self.searchBar.returnKeyType = UIReturnKeyType.done
+        let opened : Bool = UserDefaults.standard.bool(forKey: "showBalance" )
+        self.balanceLabel.isHidden = !opened
     }
 
+    override func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
+    
+    override func sendPressed(_ sender: Any) {
+        super.sendPressed(sender)
+        NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
+    }
 }
