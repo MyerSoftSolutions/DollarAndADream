@@ -9,17 +9,24 @@
 import UIKit
 
 class DDQuickSendViewController: DDSendViewController {
+    
+    var userName : String?
 
     override func viewDidLoad() {
-        self.amountSlider.minimumValue = 0.01
+        amountSlider.minimumValue = 0.01
         
-        self.searchBar.returnKeyType = UIReturnKeyType.done
+        searchBar.returnKeyType = UIReturnKeyType.done
         let opened : Bool = UserDefaults.standard.bool(forKey: "showBalance" )
-        self.balanceLabel.isHidden = !opened
+        balanceLabel.isHidden = !opened
     }
 
     override func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        searchBar.text = userName
     }
     
     override func didReceiveMemoryWarning() {

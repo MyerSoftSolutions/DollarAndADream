@@ -13,6 +13,7 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
     
     var quickSendView : UIView?
     var ddquickSendViewController : DDQuickSendViewController?
+    var userName : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +28,14 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
         view.frame = CGRect(x: 0, y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT)
     }
 
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
-//        
-//    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        ddquickSendViewController?.userName = userName
     }
     
     func dismissModal() {
@@ -55,9 +58,7 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
             quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width: 345, height: 577)
         }
         
-        //		abandonedCartView?.frame = CGRectMake(46.0, 135.0, UIScreen.mainScreen().bounds.size.width - 92.0, 503)
         quickSendView?.layer.cornerRadius = 2.5
-//        quickSendView?.center = view.center
         
         self.view.addSubview(quickSendView!)
         self.addChildViewController(ddquickSendViewController!)

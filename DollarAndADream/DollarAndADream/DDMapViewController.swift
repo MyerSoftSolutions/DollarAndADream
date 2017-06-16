@@ -101,6 +101,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             
         }
         let quickSendViewModal = DDQuickSendModalViewController()
+        quickSendViewModal.userName = self.nameLabel.text
         NotificationCenter.default.addObserver(self, selector: #selector(DDMapViewController.dismissQuickSendViewModal), name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(DDMapViewController.dismissQuickSendViewTapModal), name:NSNotification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
         
@@ -116,9 +117,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
             quickSendViewModal.removeFromSuperview()
             NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
               NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "DDMapViewController") as! DDMapViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+    
         }
     }
     
