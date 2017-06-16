@@ -12,7 +12,7 @@ import QuartzCore
 class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDelegate {
     
     var quickSendView : UIView?
-    var ddSendViewController : DDSendViewController?
+    var ddquickSendViewController : DDQuickSendViewController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
         
-        ddSendViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DDSendViewController") as? DDSendViewController
+        ddquickSendViewController = DDQuickSendViewController(nibName: "DDQuickSendViewController", bundle: nil)
         view.frame = CGRect(x: 0, y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT)
     }
 
@@ -43,16 +43,16 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         
-        quickSendView = ddSendViewController?.view
+        quickSendView = ddquickSendViewController?.view
         
         if (DeviceType.IS_IPHONE_5){
-            quickSendView?.frame = CGRect(x: 30.0, y: 80.0, width: ScreenSize.SCREEN_WIDTH - 16.0, height: 450)
+            quickSendView?.frame = CGRect(x: 15.0, y: 40.0, width:345, height: 577)
         } else if (DeviceType.IS_IPHONE_6){
-            quickSendView?.frame = CGRect(x: 46.0, y: 135.0, width: ScreenSize.SCREEN_WIDTH - 24.0, height: 503)
+            quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width: 345, height: 577)
         } else if (DeviceType.IS_IPHONE_6P){
-            quickSendView?.frame = CGRect(x: 46.0, y: 135.0, width: ScreenSize.SCREEN_WIDTH - 24.0, height: 503)
+            quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width:345, height: 577)
         }else {
-            quickSendView?.frame = CGRect(x: 46.0, y: 15.0, width: ScreenSize.SCREEN_WIDTH - 24.0, height: 503)
+            quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width: 345, height: 577)
         }
         
         //		abandonedCartView?.frame = CGRectMake(46.0, 135.0, UIScreen.mainScreen().bounds.size.width - 92.0, 503)
@@ -60,8 +60,8 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
 //        quickSendView?.center = view.center
         
         self.view.addSubview(quickSendView!)
-        self.addChildViewController(ddSendViewController!)
-        ddSendViewController?.didMove(toParentViewController: self)
+        self.addChildViewController(ddquickSendViewController!)
+        ddquickSendViewController?.didMove(toParentViewController: self)
         
     }
 
