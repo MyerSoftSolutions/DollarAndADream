@@ -19,7 +19,7 @@ class DDRecTypeSelectionViewController: UIViewController,  UIPickerViewDelegate,
     @IBOutlet weak var pickerView: UIPickerView!
     var forGraphVal : Int?
     
-    var arr = ["Education", "Person in Need", "Entrepreneur"]
+    var arr = ["Education", "Person in Need", "Entrepreneur", "Non-Profit"]
     var delegate : DDRecTypePickerDelegate?
     var selectedIdx : Int?
     

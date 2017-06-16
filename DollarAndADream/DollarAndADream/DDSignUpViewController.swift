@@ -17,7 +17,8 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate, RecTypeSel
     @IBOutlet var recTypeButtonHeightCon: NSLayoutConstraint!
     @IBOutlet weak var recTypeView: UIView!
     @IBOutlet weak var recTypeBtn: UIButton!
-    var arr = ["Education", "Person in Need", "Entrepreneur"]
+    var arr = ["EDUCATION", "PERSON IN NEED", "ENTREPRENEUR", "NON-PROFIT"]
+    var index = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +50,10 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate, RecTypeSel
         }
         
         let pickerModal = RecTypeSelectionModalController()
-        pickerModal.arr = ["Education", "Person in Need", "Entrepreneur"]
+        pickerModal.arr = ["Education", "Person in Need", "Entrepreneur", "Non-Profit"]
         
         pickerModal.modalDelegate = self
-        pickerModal.selectedIdx = 0
+        pickerModal.selectedIdx = index
         
         pickerModal.view.tag = 2000
         
@@ -65,6 +66,7 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate, RecTypeSel
     //MARK: RecTypePickerModalDelegate Methods
     func selectMetric(_ idx: Int) {
         recTypeBtn.setTitle(arr[idx], for: .normal)
+        index = idx
         if let invalidView = UIApplication.shared.keyWindow!.viewWithTag(2000) {
             invalidView.removeFromSuperview()
         }

@@ -72,7 +72,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     
     let names = ["James Early", "Greg Ang", "Jess T", "MannyM"]
     let towns = ["Riverdale, Ga", "Washington, D.C.", "Atlantic City, NJ", "Nome, VA"]
-    let recTypes = ["Entrepreneur", "Education", "Education", "Person in Need"]
+    let recTypes = ["Entrepreneur", "Education", "Non-Profit", "Person in Need"]
     let descs = ["Building a dream that will push the culture", "Education is my most important priority. Thanks in advance", "Working to Graduate and transform my industry!", "I Need your help to build back my ability to provide"]
 
     let locationMan = CLLocationManager()

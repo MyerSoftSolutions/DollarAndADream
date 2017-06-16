@@ -1125,7 +1125,7 @@
                                                     <constraint firstAttribute="height" constant="30" id="Rwr-mf-OWH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="10"/>
-                                                <state key="normal" title="NON-PROFIT">
+                                                <state key="normal" title="Select Type">
                                                     <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
