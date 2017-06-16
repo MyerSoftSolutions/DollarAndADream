@@ -57,7 +57,7 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
         
         //		abandonedCartView?.frame = CGRectMake(46.0, 135.0, UIScreen.mainScreen().bounds.size.width - 92.0, 503)
         quickSendView?.layer.cornerRadius = 2.5
-        quickSendView?.center = view.center
+//        quickSendView?.center = view.center
         
         self.view.addSubview(quickSendView!)
         self.addChildViewController(ddSendViewController!)

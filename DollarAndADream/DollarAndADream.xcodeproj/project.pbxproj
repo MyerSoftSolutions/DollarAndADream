@@ -26,6 +26,8 @@
 		D921727D1EB14964001E353A /* DDHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727B1EB14964001E353A /* DDHomeViewController.swift */; };
 		D921727F1EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
 		D92172801EB14989001E353A /* DDSendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D921727E1EB14989001E353A /* DDSendViewController.swift */; };
+		D9322F481EF3987A005CAFF3 /* DDQuickSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9322F471EF3987A005CAFF3 /* DDQuickSendViewController.xib */; };
+		D9322F491EF3987A005CAFF3 /* DDQuickSendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9322F471EF3987A005CAFF3 /* DDQuickSendViewController.xib */; };
 		D93B7C861ED5233C0080F3A0 /* DDQuickSendModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */; };
 		D93B7C871ED5233C0080F3A0 /* DDQuickSendModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */; };
 		D94E7BBF1EBA19BC00042B2C /* DDReceivedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */; };
@@ -74,6 +76,7 @@
 		D92172781EB14934001E353A /* DDSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSignUpViewController.swift; sourceTree = "<group>"; };
 		D921727B1EB14964001E353A /* DDHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDHomeViewController.swift; sourceTree = "<group>"; };
 		D921727E1EB14989001E353A /* DDSendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDSendViewController.swift; sourceTree = "<group>"; };
+		D9322F471EF3987A005CAFF3 /* DDQuickSendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DDQuickSendViewController.xib; sourceTree = "<group>"; };
 		D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDQuickSendModalViewController.swift; sourceTree = "<group>"; };
 		D94E7BBE1EBA19BC00042B2C /* DDReceivedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDReceivedTableViewController.swift; sourceTree = "<group>"; };
 		D94E7BC11EBA19D500042B2C /* DDFavesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DDFavesTableViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 				D921727B1EB14964001E353A /* DDHomeViewController.swift */,
 				D921727E1EB14989001E353A /* DDSendViewController.swift */,
 				D974EB851EE32BDE00ADA6B3 /* DDQuickSendViewController.swift */,
+				D9322F471EF3987A005CAFF3 /* DDQuickSendViewController.xib */,
 				D92172561EB14764001E353A /* Main.storyboard */,
 				D93B7C851ED5233C0080F3A0 /* DDQuickSendModalViewController.swift */,
 				D904B15A1EC165D8006525C1 /* DDSettingsTableViewController.swift */,
@@ -267,6 +271,7 @@
 			files = (
 				D9618E451EB8BBFF00074CDC /* GrandHotel-Regular.otf in Resources */,
 				D92172601EB14764001E353A /* LaunchScreen.storyboard in Resources */,
+				D9322F481EF3987A005CAFF3 /* DDQuickSendViewController.xib in Resources */,
 				D921725D1EB14764001E353A /* Assets.xcassets in Resources */,
 				D92172581EB14764001E353A /* Main.storyboard in Resources */,
 				D9618E491EB8C17100074CDC /* Glegoo-Regular.ttf in Resources */,
@@ -278,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9322F491EF3987A005CAFF3 /* DDQuickSendViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
