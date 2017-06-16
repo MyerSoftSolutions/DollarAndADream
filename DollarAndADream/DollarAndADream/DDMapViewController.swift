@@ -64,8 +64,11 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     @IBOutlet var locationLabel: UILabel!
     @IBOutlet var receiverTypeLabel: UILabel!
     @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
     
     @IBOutlet weak var lowerViewHeightCon: NSLayoutConstraint!
+    
+    var prefs = UserDefaults.standard
     
     let names = ["James Early", "Greg Ang", "Jess T", "MannyM"]
     let towns = ["Riverdale, Ga", "Washington, D.C.", "Atlantic City, NJ", "Nome, VA"]
@@ -197,7 +200,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         
         let camera = MKMapCamera(lookingAtCenter: center, fromEyeCoordinate: center, eyeAltitude: 1610)
         mapView.setCamera(camera, animated: true)
-        mapView.selectedAnnotations = [point3]
+        mapView.selectedAnnotations = [point]
         
     }
     
@@ -244,7 +247,15 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         self.nameLabel.text = annotation.name
         self.locationLabel.text = annotation.hometown
         self.receiverTypeLabel.text = annotation.recType
-        self.descriptionLabel.text = annotation.descr
+        if annotation.recType == "Entrepreneur" && prefs.bool(forKey: "showInfo") {
+            descriptionLabel.isHidden = false
+            descLabel.isHidden = false
+
+            self.descriptionLabel.text = annotation.descr
+        } else {
+            descriptionLabel.isHidden = true
+            descLabel.isHidden = true
+        }
         
     }
     

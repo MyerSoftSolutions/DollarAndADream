@@ -13,10 +13,16 @@ import CoreData
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var prefs = UserDefaults.standard
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        if prefs.value(forKey: "showBalance") == nil && prefs.value(forKey: "showInfo") == nil {
+            prefs.set(false, forKey: "showBalance")
+            prefs.set(false, forKey: "showInfo")
+        }
+        
         return true
     }
 
