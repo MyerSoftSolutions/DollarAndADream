@@ -746,11 +746,11 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Z5t-r1-VUh" id="bsA-7G-y4h">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43v-vu-S8T">
-                                            <rect key="frame" x="15" y="11" width="37.5" height="18"/>
+                                            <rect key="frame" x="15" y="11" width="34.5" height="18"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="18" id="UEk-RL-6KK"/>
                                             </constraints>
@@ -772,7 +772,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RC-YD-06C">
-                                            <rect key="frame" x="296.5" y="12" width="63.5" height="29"/>
+                                            <rect key="frame" x="301" y="12" width="59" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="Feb-1s-wPz"/>
                                             </constraints>
@@ -1104,7 +1104,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzr-Ny-CW6">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dzr-Ny-CW6">
                                         <rect key="frame" x="64" y="337" width="240" height="85"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Receiver Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKz-J5-dzj">
@@ -1177,6 +1177,7 @@
                                     <constraint firstItem="Exn-kc-GAD" firstAttribute="centerX" secondItem="dzr-Ny-CW6" secondAttribute="centerX" id="fmL-YZ-KTt"/>
                                     <constraint firstItem="Jv9-tM-kEy" firstAttribute="top" secondItem="WL5-hT-nuX" secondAttribute="bottom" constant="8" id="gje-tG-ihY"/>
                                     <constraint firstItem="PSK-PU-FTy" firstAttribute="leading" secondItem="jgp-s3-Gln" secondAttribute="leading" id="hM0-0K-Rfk"/>
+                                    <constraint firstItem="dzr-Ny-CW6" firstAttribute="top" secondItem="Exn-kc-GAD" secondAttribute="bottom" constant="8" id="idS-R7-x8I"/>
                                     <constraint firstItem="Dj1-NF-64U" firstAttribute="top" secondItem="RiT-Dw-Uvu" secondAttribute="bottom" constant="8" id="iqr-JK-cG2"/>
                                     <constraint firstItem="pRB-ts-TCm" firstAttribute="width" secondItem="7BG-1X-Fhh" secondAttribute="width" id="lAA-WG-Tou"/>
                                     <constraint firstItem="UEK-Yk-PEB" firstAttribute="top" secondItem="lRF-Cr-YIk" secondAttribute="bottom" constant="29" id="lKh-0x-5G5"/>
@@ -1208,6 +1209,7 @@
                         <outlet property="accountTypeSegControl" destination="Exn-kc-GAD" id="3Er-VD-13Q"/>
                         <outlet property="recTypeButtonHeightCon" destination="Rwr-mf-OWH" id="i1S-d0-ycJ"/>
                         <outlet property="recTypeLabelHeightCon" destination="401-wf-FdG" id="OpA-D8-yoD"/>
+                        <outlet property="recTypeView" destination="dzr-Ny-CW6" id="Ngy-hb-kBW"/>
                         <outlet property="scrollView" destination="2vs-Kl-rU4" id="HeV-tc-QCm"/>
                         <outlet property="segBottomToSeparatorCon" destination="w4r-To-qdq" id="Hfd-PR-KO6"/>
                     </connections>

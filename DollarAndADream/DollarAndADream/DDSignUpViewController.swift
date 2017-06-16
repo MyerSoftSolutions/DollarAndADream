@@ -15,6 +15,7 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var segBottomToSeparatorCon: NSLayoutConstraint!
     @IBOutlet var recTypeLabelHeightCon: NSLayoutConstraint!
     @IBOutlet var recTypeButtonHeightCon: NSLayoutConstraint!
+    @IBOutlet weak var recTypeView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.createCustomBackButton("X")
@@ -29,15 +30,17 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate {
 
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
         if sender.selectedSegmentIndex == 0 {
+            recTypeView.isHidden = true
             self.accountTypeSegControl.selectedSegmentIndex = 0
-            self.recTypeLabelHeightCon.constant = 0
-            self.recTypeButtonHeightCon.constant = 0
+//            self.recTypeLabelHeightCon.constant = 0
+//            self.recTypeButtonHeightCon.constant = 0
             self.segBottomToSeparatorCon.constant = 10
         }  else {
-            self.accountTypeSegControl.selectedSegmentIndex = 0
-            self.recTypeLabelHeightCon.constant = 22
-            self.recTypeButtonHeightCon.constant = 30
-            self.segBottomToSeparatorCon.constant = 96
+            recTypeView.isHidden = false
+            self.accountTypeSegControl.selectedSegmentIndex = 1
+//            self.recTypeLabelHeightCon.constant = 22
+//            self.recTypeButtonHeightCon.constant = 30
+            self.segBottomToSeparatorCon.constant = 88
         }
         
         
