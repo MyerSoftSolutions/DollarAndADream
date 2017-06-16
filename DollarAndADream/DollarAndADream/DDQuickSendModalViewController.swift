@@ -65,4 +65,11 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
         
     }
 
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
+        if (touch.view?.isDescendant(of: quickSendView!))!{
+            return false
+        }
+        return true
+    }
+
 }
