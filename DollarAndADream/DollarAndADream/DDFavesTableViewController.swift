@@ -73,7 +73,7 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
         self.tableView.estimatedRowHeight = UITableViewAutomaticDimension
     }
     
-    func addFavorite() {
+    @objc func addFavorite() {
         let alertController = UIAlertController(title: "Please", message: "enter username", preferredStyle: UIAlertControllerStyle.alert)
         alertController.addTextField { (textField : UITextField) -> Void in
             textField.placeholder = "username"
@@ -109,7 +109,7 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
         // Dispose of any resources that can be recreated.
     }
     
-    func deleteItem (_ sender: UIButton) {
+    @objc func deleteItem (_ sender: UIButton) {
         let cell  = sender.superview!.superview!.superview!.superview as! DDFavesCell
         let idxPath = tableView.indexPath(for: cell)
         

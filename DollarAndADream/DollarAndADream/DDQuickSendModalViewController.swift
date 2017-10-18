@@ -38,7 +38,7 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
         ddquickSendViewController?.userName = userName
     }
     
-    func dismissModal() {
+    @objc func dismissModal() {
         NotificationCenter.default.post(name: Notification.Name(rawValue: "DismissQuickSendTapNotification"), object: nil)
 
     }

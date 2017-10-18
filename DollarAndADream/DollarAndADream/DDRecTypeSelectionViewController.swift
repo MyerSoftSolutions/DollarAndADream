@@ -92,7 +92,7 @@ class RecTypeSelectionModalController : UIViewController, DDRecTypePickerDelegat
     }
 
     
-    func dismissModal() {
+    @objc func dismissModal() {
         self.modalDelegate?.nixModal()
     }
     //

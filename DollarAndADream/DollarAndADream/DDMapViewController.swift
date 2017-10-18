@@ -86,7 +86,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         mapView.delegate = self
         mapView.showsUserLocation = true
         
-        locationMan.requestAlwaysAuthorization()
+        locationMan.requestWhenInUseAuthorization()
 
         // Do any additional setup after loading the view.
     }
@@ -119,7 +119,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
 
     }
     
-    func dismissQuickSendViewModal() {
+    @objc func dismissQuickSendViewModal() {
         if let quickSendViewModal = UIApplication.shared.keyWindow!.viewWithTag(1000)  {
             quickSendViewModal.removeFromSuperview()
             NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
@@ -128,7 +128,7 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
         }
     }
     
-    func dismissQuickSendViewTapModal(){
+    @objc func dismissQuickSendViewTapModal(){
         if let quickSendViewModal = UIApplication.shared.keyWindow!.viewWithTag(1000)  {
             quickSendViewModal.removeFromSuperview()
             NotificationCenter.default.removeObserver(self, name:NSNotification.Name(rawValue: "DismissQuickSendNotification"), object: nil)
@@ -142,10 +142,11 @@ class DDMapViewController: UIViewController, MKMapViewDelegate, CLLocationManage
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus)
     {
+        
         if status == .authorizedAlways || status == .authorizedWhenInUse {
             manager.distanceFilter = kCLDistanceFilterNone
             manager.desiredAccuracy = kCLLocationAccuracyKilometer
-       
+            
             manager.requestLocation()
             
         }

@@ -29,8 +29,10 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use your location to send notifications about nearby users</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>&quot;We use your location to send notifications about nearby stores&quot;</string>
+	<string>We use your location to send notifications about nearby users</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>GrandHotel-Regular</string>

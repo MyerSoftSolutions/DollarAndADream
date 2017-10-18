@@ -21,7 +21,7 @@ extension UIViewController{
         self.navigationItem.leftBarButtonItem = backBtn
     }
 
-    func navigationBackButtonClicked() {
+    @objc func navigationBackButtonClicked() {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
 
@@ -30,7 +30,7 @@ extension UIViewController{
         view.addGestureRecognizer(tap)
     }
     
-    func dismissThisKeyboard() {
+    @objc func dismissThisKeyboard() {
         view.endEditing(true)
     }
     

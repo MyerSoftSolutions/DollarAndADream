@@ -34,7 +34,7 @@ class DDQuickSendViewController: DDSendViewController {
     }
     
     override func sendPressed(_ sender: Any) {
-        if searchBar.text?.characters.count != 0 {
+        if searchBar.text?.count != 0 {
             if self.amount != 1.00 {
                 let amt = Int(self.amount * 100)
                 let alertController = UIAlertController(title: "Send \(String(format: "%d", amt))¢ to \(String(describing: searchBar.text!))?", message: "", preferredStyle: UIAlertControllerStyle.alert)

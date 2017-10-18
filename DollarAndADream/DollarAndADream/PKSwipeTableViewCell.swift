@@ -98,7 +98,7 @@ class PKSwipeTableViewCell: UITableViewCell , PKSwipeCellDelegateProtocol {
     
     - parameter panGestureRecognizer: panGesture Object
     */
-    func handlePanGesture(_ panGestureRecognizer : UIPanGestureRecognizer) {
+    @objc func handlePanGesture(_ panGestureRecognizer : UIPanGestureRecognizer) {
         if isPanEnabled == false{
             return
         }
@@ -216,10 +216,10 @@ class PKSwipeTableViewCell: UITableViewCell , PKSwipeCellDelegateProtocol {
         }) 
     }
     
-    func swipeBeginInCell(_ cell: PKSwipeTableViewCell) {
+    @objc func swipeBeginInCell(_ cell: PKSwipeTableViewCell) {
     }
     
-    func swipeDoneOnPreviousCell() -> PKSwipeTableViewCell? {
+    @objc func swipeDoneOnPreviousCell() -> PKSwipeTableViewCell? {
         return self
     }
 }
