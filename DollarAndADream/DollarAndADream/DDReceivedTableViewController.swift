@@ -17,10 +17,10 @@ class DDReceivedCell : UITableViewCell {
 
 class DDReceivedTableViewController: UITableViewController {
     
-    let namesArray = ["JamesK", "Ascend20", "WellingtonD", "XavierE"]
-    let dateArray = ["May 3, 2017", "May 3, 2017", "April 30, 2017", "April 30, 2017"]
+    let namesArray = ["JamesK", "Ascend20", "WellingtonD", "XavierE", "Cadence20", "FordhamtonD", "FineXtra"]
+    let dateArray = ["Nov 1, 2017", "Oct 30, 2017", "Oct 28, 2017", "Oct 27, 2017", "Sept 30, 2017", "Sept 29, 2017", "Sept 27, 2017"]
     
-    let priceArray = ["$1.00", "89¢", "50¢", "$1.00"]
+    let priceArray = ["$1.00", "89¢", "50¢", "$1.00", "79¢", "50¢", "$1.00"]
 
 
     override func viewDidLoad() {
@@ -40,7 +40,7 @@ class DDReceivedTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return namesArray.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

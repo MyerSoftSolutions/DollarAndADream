@@ -244,7 +244,7 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X557HAPU2P;
 						LastSwiftMigration = 0910;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D92172651EB14764001E353A = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -485,12 +485,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X557HAPU2P;
 				INFOPLIST_FILE = DollarAndADream/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DollarDream.DollarAndADream;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dollar-and-a-Dream.DollarAndADream";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8411eb9b-07ec-45e7-be8e-6b9ea02116c8";
+				PROVISIONING_PROFILE_SPECIFIER = DDreamApr;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -500,12 +504,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = X557HAPU2P;
 				INFOPLIST_FILE = DollarAndADream/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.DollarDream.DollarAndADream;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dollar-and-a-Dream.DollarAndADream";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8411eb9b-07ec-45e7-be8e-6b9ea02116c8";
+				PROVISIONING_PROFILE_SPECIFIER = DDreamApr;
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
