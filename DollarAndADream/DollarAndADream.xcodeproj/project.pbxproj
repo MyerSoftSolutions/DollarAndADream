@@ -242,7 +242,7 @@
 				TargetAttributes = {
 					D921724E1EB14764001E353A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = K958R4Z576;
+						DevelopmentTeam = X557HAPU2P;
 						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
@@ -485,9 +485,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K958R4Z576;
+				DEVELOPMENT_TEAM = X557HAPU2P;
 				INFOPLIST_FILE = DollarAndADream/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DollarDream.DollarAndADream;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,9 +500,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K958R4Z576;
+				DEVELOPMENT_TEAM = X557HAPU2P;
 				INFOPLIST_FILE = DollarAndADream/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DollarDream.DollarAndADream;
 				PRODUCT_NAME = "$(TARGET_NAME)";

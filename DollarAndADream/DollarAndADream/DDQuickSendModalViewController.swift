@@ -49,12 +49,14 @@ class DDQuickSendModalViewController: UIViewController, UIGestureRecognizerDeleg
         quickSendView = ddquickSendViewController?.view
         
         if (DeviceType.IS_IPHONE_5){
-            quickSendView?.frame = CGRect(x: 15.0, y: 40.0, width:345, height: 577)
+            quickSendView?.frame = CGRect(x: 15.0, y: 40.0, width: 345, height: 577)
         } else if (DeviceType.IS_IPHONE_6){
             quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width: 345, height: 577)
         } else if (DeviceType.IS_IPHONE_6P){
-            quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width:345, height: 577)
-        }else {
+            quickSendView?.frame = CGRect(x: 34.5, y: 160.0, width: 345, height: 595)
+        } else if (DeviceType.IS_IPHONE_X) {
+            quickSendView?.frame = CGRect(x: 15.0, y: 170.0, width: 345, height: 620)
+        } else {
             quickSendView?.frame = CGRect(x: 15.0, y: 90.0, width: 345, height: 577)
         }
         

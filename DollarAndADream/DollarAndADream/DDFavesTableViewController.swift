@@ -141,6 +141,7 @@ class DDFavesTableViewController: UITableViewController, PKSwipeCellDelegateProt
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavesCell", for: indexPath) as! DDFavesCell
         cell.delegate = self
+        cell.isPanEnabled = false
         
         cell.nameLabel.text = namesArray[indexPath.row]
         cell.dateLabel.text = "Since: \(sinceArray[indexPath.row])"
