@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -34,51 +34,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4D-Cd-5em">
-                                <rect key="frame" x="48" y="193" width="85" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="7st-5K-y9G"/>
-                                    <constraint firstAttribute="height" constant="21" id="nu0-zv-ekj"/>
-                                </constraints>
+                                <rect key="frame" x="46" y="192" width="66" height="22"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-Ed-mqT">
-                                <rect key="frame" x="48" y="214" width="279" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="hdj-R4-lIb"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lHS-Ed-mqT">
+                                <rect key="frame" x="46" y="214" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5i-Hz-oOh">
-                                <rect key="frame" x="48" y="259" width="53.5" height="21"/>
+                                <rect key="frame" x="46" y="258" width="60" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="z8Y-tA-H8E"/>
+                                    <constraint firstAttribute="width" constant="60" id="wad-2r-7LT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3M-9l-jg4">
-                                <rect key="frame" x="48" y="280" width="279" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="T8b-pN-DiL"/>
-                                </constraints>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c3M-9l-jg4">
+                                <rect key="frame" x="46" y="280" width="283" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e8d-1s-woZ">
-                                <rect key="frame" x="48" y="62" width="279" height="44"/>
+                                <rect key="frame" x="36" y="57" width="303" height="44"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgd-OR-N4J">
-                                <rect key="frame" x="48" y="369" width="279" height="44"/>
+                                <rect key="frame" x="46" y="368" width="283" height="45"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="v0R-em-C1S"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="18"/>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -88,12 +75,8 @@
                                     <segue destination="D8K-OS-aXH" kind="show" id="E53-uj-Bbf"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-9o-vBW">
-                                <rect key="frame" x="48" y="421" width="60" height="38"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="EvS-8Q-bgN"/>
-                                    <constraint firstAttribute="height" constant="38" id="M3B-hb-tk4"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jea-9o-vBW">
+                                <rect key="frame" x="46" y="421" width="54" height="38"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="14"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="0.20392156862745098" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,26 +89,27 @@
                         </subviews>
                         <color key="backgroundColor" red="0.062745098039215685" green="0.094117647058823528" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e8d-1s-woZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="8hH-Pm-IC9"/>
-                            <constraint firstItem="lHS-Ed-mqT" firstAttribute="top" secondItem="J4D-Cd-5em" secondAttribute="bottom" id="9yH-TE-8wY"/>
-                            <constraint firstItem="xgd-OR-N4J" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="CEE-dj-FfP"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lHS-Ed-mqT" secondAttribute="trailing" constant="32" id="Dbn-iK-NDR"/>
-                            <constraint firstItem="Jea-9o-vBW" firstAttribute="top" secondItem="xgd-OR-N4J" secondAttribute="bottom" constant="8" id="JvN-tH-ZLv"/>
-                            <constraint firstItem="h5i-Hz-oOh" firstAttribute="leading" secondItem="c3M-9l-jg4" secondAttribute="leading" id="K2a-Jj-kM5"/>
-                            <constraint firstItem="c3M-9l-jg4" firstAttribute="top" secondItem="h5i-Hz-oOh" secondAttribute="bottom" id="OmR-Pa-X21"/>
-                            <constraint firstItem="e8d-1s-woZ" firstAttribute="leading" secondItem="J4D-Cd-5em" secondAttribute="leading" id="SiR-Gl-1ht"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="c3M-9l-jg4" secondAttribute="trailing" constant="32" id="U2k-ke-4Is"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Jea-9o-vBW" secondAttribute="bottom" constant="208" id="V1h-oF-o7K"/>
-                            <constraint firstItem="c3M-9l-jg4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="WJP-mI-lDI"/>
-                            <constraint firstItem="xgd-OR-N4J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wkt-o0-zPB"/>
-                            <constraint firstItem="lHS-Ed-mqT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="32" id="YKb-01-Fn8"/>
-                            <constraint firstItem="J4D-Cd-5em" firstAttribute="leading" secondItem="lHS-Ed-mqT" secondAttribute="leading" id="com-iY-ycN"/>
-                            <constraint firstItem="e8d-1s-woZ" firstAttribute="trailing" secondItem="lHS-Ed-mqT" secondAttribute="trailing" id="kWW-LZ-k7J"/>
-                            <constraint firstItem="Jea-9o-vBW" firstAttribute="leading" secondItem="xgd-OR-N4J" secondAttribute="leading" id="kqZ-6m-fh0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xgd-OR-N4J" secondAttribute="trailing" constant="32" id="mFf-P2-yot"/>
-                            <constraint firstItem="h5i-Hz-oOh" firstAttribute="top" secondItem="lHS-Ed-mqT" secondAttribute="bottom" constant="15" id="q2r-QR-GMt"/>
-                            <constraint firstItem="xgd-OR-N4J" firstAttribute="top" secondItem="c3M-9l-jg4" secondAttribute="bottom" constant="59" id="utZ-RK-sa1"/>
-                            <constraint firstItem="J4D-Cd-5em" firstAttribute="top" secondItem="e8d-1s-woZ" secondAttribute="bottom" constant="87" id="vWs-zt-plb"/>
+                            <constraint firstItem="Jea-9o-vBW" firstAttribute="leading" secondItem="xgd-OR-N4J" secondAttribute="leading" id="200-5Y-SQq"/>
+                            <constraint firstItem="lHS-Ed-mqT" firstAttribute="top" secondItem="J4D-Cd-5em" secondAttribute="bottom" id="9HV-D9-kSW"/>
+                            <constraint firstItem="xgd-OR-N4J" firstAttribute="leading" secondItem="c3M-9l-jg4" secondAttribute="leading" id="EiP-Ny-988"/>
+                            <constraint firstItem="h5i-Hz-oOh" firstAttribute="top" secondItem="lHS-Ed-mqT" secondAttribute="bottom" constant="14" id="FPx-Cg-le7"/>
+                            <constraint firstItem="c3M-9l-jg4" firstAttribute="top" secondItem="lHS-Ed-mqT" secondAttribute="bottom" constant="36" id="GYu-mM-vpY"/>
+                            <constraint firstItem="lHS-Ed-mqT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="GeS-We-NRL"/>
+                            <constraint firstItem="c3M-9l-jg4" firstAttribute="trailing" secondItem="lHS-Ed-mqT" secondAttribute="trailing" id="Geh-D3-Yfq"/>
+                            <constraint firstItem="Jea-9o-vBW" firstAttribute="top" secondItem="xgd-OR-N4J" secondAttribute="bottom" constant="8" id="HcW-3E-16R"/>
+                            <constraint firstItem="lHS-Ed-mqT" firstAttribute="top" secondItem="e8d-1s-woZ" secondAttribute="bottom" constant="113" id="OIr-gA-0RF"/>
+                            <constraint firstItem="xgd-OR-N4J" firstAttribute="top" secondItem="c3M-9l-jg4" secondAttribute="bottom" constant="58" id="Ts5-RQ-ii2"/>
+                            <constraint firstItem="e8d-1s-woZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="VJ6-DH-LUJ"/>
+                            <constraint firstItem="h5i-Hz-oOh" firstAttribute="leading" secondItem="c3M-9l-jg4" secondAttribute="leading" id="YqT-21-jtu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lHS-Ed-mqT" secondAttribute="trailing" constant="30" id="enY-b9-oQR"/>
+                            <constraint firstItem="c3M-9l-jg4" firstAttribute="leading" secondItem="lHS-Ed-mqT" secondAttribute="leading" id="foT-Bo-U74"/>
+                            <constraint firstItem="e8d-1s-woZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="37" id="iCO-9D-4o8"/>
+                            <constraint firstItem="J4D-Cd-5em" firstAttribute="leading" secondItem="lHS-Ed-mqT" secondAttribute="leading" id="kck-EU-GdH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e8d-1s-woZ" secondAttribute="trailing" constant="20" id="sTs-xy-euQ"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="J4D-Cd-5em" secondAttribute="trailing" id="ssZ-sO-auG"/>
+                            <constraint firstItem="c3M-9l-jg4" firstAttribute="top" secondItem="h5i-Hz-oOh" secondAttribute="bottom" id="t3e-9w-jzs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Jea-9o-vBW" secondAttribute="trailing" constant="259" id="tTh-id-k8N"/>
+                            <constraint firstItem="xgd-OR-N4J" firstAttribute="trailing" secondItem="c3M-9l-jg4" secondAttribute="trailing" id="yCM-2I-AH9"/>
                         </constraints>
                     </view>
                     <connections>
@@ -428,26 +412,26 @@
                                     <constraint firstAttribute="height" constant="42" id="lFX-ev-s4f"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" text="SEND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t1-Vn-UOL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="SEND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t1-Vn-UOL">
                                 <rect key="frame" x="10" y="323" width="48" height="26"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoU-W2-F86">
-                                <rect key="frame" x="10" y="459" width="37" height="20"/>
+                                <rect key="frame" x="10" y="448.5" width="37" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="RECEIVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44s-aC-aKP">
-                                <rect key="frame" x="197" y="319" width="82" height="30.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEIVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44s-aC-aKP">
+                                <rect key="frame" x="196.5" y="319" width="82.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4j-Mf-ymM">
-                                <rect key="frame" x="197" y="459" width="91" height="20"/>
+                                <rect key="frame" x="196.5" y="448.5" width="91.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
                                 <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -473,7 +457,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&amp;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65F-jZ-B5i">
-                                <rect key="frame" x="143" y="118" width="42" height="42"/>
+                                <rect key="frame" x="143" y="118" width="42" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="U9a-KH-hqc"/>
                                 </constraints>
@@ -482,7 +466,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dream" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dhs-dR-C8r">
-                                <rect key="frame" x="184.5" y="204" width="141.5" height="49"/>
+                                <rect key="frame" x="224.5" y="204" width="101.5" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="FVf-ek-Qwy"/>
                                 </constraints>
@@ -770,7 +754,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RC-YD-06C">
-                                            <rect key="frame" x="296.5" y="12" width="63.5" height="29"/>
+                                            <rect key="frame" x="288.5" y="12" width="63.5" height="29"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="29" id="Feb-1s-wPz"/>
                                             </constraints>
@@ -826,7 +810,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPe-8c-6wc">
-                                            <rect key="frame" x="15" y="8" width="37" height="17"/>
+                                            <rect key="frame" x="23" y="11" width="40" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="VS6-D5-unt"/>
                                             </constraints>
@@ -835,7 +819,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-xb-wFI">
-                                            <rect key="frame" x="15" y="34" width="27" height="13"/>
+                                            <rect key="frame" x="23" y="27" width="29.5" height="20"/>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="11"/>
                                             <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
@@ -1362,7 +1346,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-Ys-Xkb">
-                                            <rect key="frame" x="15" y="22" width="40" height="17"/>
+                                            <rect key="frame" x="23" y="22" width="40" height="17"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="17" id="Wxv-Yb-2QU"/>
                                             </constraints>
@@ -1371,7 +1355,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-Hy-0qR">
-                                            <rect key="frame" x="305" y="15" width="51" height="31"/>
+                                            <rect key="frame" x="297" y="15" width="51" height="31"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <color key="tintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="onTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
