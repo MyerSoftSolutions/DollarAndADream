@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -65,10 +65,10 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgd-OR-N4J">
                                 <rect key="frame" x="46" y="368" width="283" height="45"/>
-                                <color key="backgroundColor" red="0.20392156862745098" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.89223802089691162" green="0.99793130159378052" blue="0.59091109037399292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="18"/>
                                 <state key="normal" title="LOGIN">
-                                    <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="loginTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BNv-FY-CYh"/>
@@ -79,7 +79,7 @@
                                 <rect key="frame" x="46" y="421" width="54" height="38"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="14"/>
                                 <state key="normal" title="Sign Up">
-                                    <color key="titleColor" red="0.20392156862745098" green="0.85490196078431369" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.892131507396698" green="1" blue="0.59068381786346436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qR7-uP-RNd"/>
@@ -87,7 +87,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.062745098039215685" green="0.094117647058823528" blue="0.32156862745098036" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.011607798747718334" green="0.76084953546524048" blue="0.83341151475906372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Jea-9o-vBW" firstAttribute="leading" secondItem="xgd-OR-N4J" secondAttribute="leading" id="200-5Y-SQq"/>
                             <constraint firstItem="lHS-Ed-mqT" firstAttribute="top" secondItem="J4D-Cd-5em" secondAttribute="bottom" id="9HV-D9-kSW"/>
@@ -108,7 +108,6 @@
                             <constraint firstAttribute="trailingMargin" secondItem="e8d-1s-woZ" secondAttribute="trailing" constant="20" id="sTs-xy-euQ"/>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="J4D-Cd-5em" secondAttribute="trailing" id="ssZ-sO-auG"/>
                             <constraint firstItem="c3M-9l-jg4" firstAttribute="top" secondItem="h5i-Hz-oOh" secondAttribute="bottom" id="t3e-9w-jzs"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Jea-9o-vBW" secondAttribute="trailing" constant="259" id="tTh-id-k8N"/>
                             <constraint firstItem="xgd-OR-N4J" firstAttribute="trailing" secondItem="c3M-9l-jg4" secondAttribute="trailing" id="yCM-2I-AH9"/>
                         </constraints>
                     </view>
@@ -365,7 +364,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xwu-Jy-8fr">
                                         <rect key="frame" x="0.0" y="0.0" width="186.5" height="127"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="sendTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="cgJ-iS-JE2"/>
                                             <segue destination="SYf-DR-zYV" kind="show" identifier="SendSegue" id="ZW4-lh-89A"/>
@@ -373,7 +372,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUP-te-5aZ">
                                         <rect key="frame" x="188.5" y="0.0" width="186.5" height="127"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="receivedTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="5qO-e0-R12"/>
                                             <segue destination="4HI-pB-LGd" kind="show" identifier="ReceivedSegue" id="lAT-hI-jvY"/>
@@ -389,7 +388,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Obd-ld-6ai">
                                         <rect key="frame" x="0.0" y="0.0" width="186.5" height="127"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="mapTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="Iyl-Gp-fDj"/>
                                             <segue destination="Ubp-NP-QmC" kind="show" identifier="MapSegue" id="n0e-ZB-Ykx"/>
@@ -397,7 +396,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hl7-bC-2EH">
                                         <rect key="frame" x="188.5" y="0.0" width="186.5" height="127"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="favoritesTapped:" destination="D8K-OS-aXH" eventType="touchUpInside" id="GXD-sy-S3G"/>
                                             <segue destination="Y6A-cM-8aw" kind="show" identifier="FavesSegue" id="pUY-BT-8eI"/>
@@ -415,25 +414,25 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" misplaced="YES" text="SEND" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8t1-Vn-UOL">
                                 <rect key="frame" x="10" y="323" width="48" height="26"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
-                                <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MAP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zoU-W2-F86">
                                 <rect key="frame" x="10" y="448.5" width="37" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
-                                <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RECEIVED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44s-aC-aKP">
                                 <rect key="frame" x="196.5" y="319" width="82.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
-                                <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAVORITES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4j-Mf-ymM">
                                 <rect key="frame" x="196.5" y="448.5" width="91.5" height="30.5"/>
                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="17"/>
-                                <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFI-25-Wn9">
@@ -488,7 +487,7 @@
                                 <rect key="frame" x="21" y="47" width="333" height="233"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="E4j-Mf-ymM" firstAttribute="leading" secondItem="44s-aC-aKP" secondAttribute="leading" id="2nw-se-BgQ"/>
                             <constraint firstAttribute="trailing" secondItem="vWJ-w4-ema" secondAttribute="trailing" id="5n1-hH-Ooo"/>
@@ -566,8 +565,8 @@
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.01" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ST6-s9-3nA">
                                 <rect key="frame" x="46" y="388" width="284" height="31"/>
-                                <color key="minimumTrackTintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="maximumTrackTintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="minimumTrackTintColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="thumbTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="sliderChanged:" destination="uvD-9d-rD3" eventType="valueChanged" id="ZMM-pJ-MMq"/>
@@ -575,13 +574,13 @@
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATW-vv-F1Y">
                                 <rect key="frame" x="48" y="495" width="280" height="44"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Jmi-Rf-70x"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="SEND $1.00">
-                                    <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="sendPressed:" destination="uvD-9d-rD3" eventType="touchUpInside" id="8sp-hI-dbn"/>
@@ -599,18 +598,18 @@
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g95-3U-Hkn">
                                 <rect key="frame" x="137" y="339" width="32" height="1"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="lr2-Oi-kwF"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avU-EX-Phv">
                                 <rect key="frame" x="219" y="339" width="32" height="1"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdz-8N-NWY">
                                 <rect key="frame" x="258" y="339" width="32" height="1"/>
-                                <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJt-MV-GaT">
                                 <rect key="frame" x="177" y="289" width="30" height="51"/>
@@ -660,7 +659,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="g95-3U-Hkn" firstAttribute="leading" secondItem="yRm-hD-BKL" secondAttribute="leading" constant="137" id="19n-ck-X3I"/>
                             <constraint firstItem="ATW-vv-F1Y" firstAttribute="top" secondItem="ST6-s9-3nA" secondAttribute="bottom" constant="77" id="1DH-jq-uSR"/>
@@ -722,7 +721,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="5eQ-xt-4BG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ReceivedCell" rowHeight="54" id="Z5t-r1-VUh" customClass="DDReceivedCell" customModule="DollarAndADream" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
@@ -737,12 +736,12 @@
                                                 <constraint firstAttribute="height" constant="18" id="UEk-RL-6KK"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="14"/>
-                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="obz-A0-Oe7">
                                             <rect key="frame" x="15" y="52.5" width="345" height="1"/>
-                                            <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="Tcp-Oh-YGJ"/>
                                             </constraints>
@@ -750,7 +749,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2v-de-2CY">
                                             <rect key="frame" x="31" y="28" width="30" height="17"/>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="11"/>
-                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8RC-YD-06C">
@@ -759,7 +758,7 @@
                                                 <constraint firstAttribute="height" constant="29" id="Feb-1s-wPz"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="24"/>
-                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -800,7 +799,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" id="3SZ-XL-dqf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="FavesCell" rowHeight="54" id="IuN-8k-70d" customClass="DDFavesCell" customModule="DollarAndADream" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="54"/>
@@ -815,18 +814,18 @@
                                                 <constraint firstAttribute="height" constant="17" id="VS6-D5-unt"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="15"/>
-                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTm-xb-wFI">
                                             <rect key="frame" x="23" y="27" width="29.5" height="20"/>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="11"/>
-                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1o-rO-JR7">
                                             <rect key="frame" x="15" y="53" width="345" height="1"/>
-                                            <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="Lp4-Yk-kxj"/>
                                             </constraints>
@@ -1027,14 +1026,14 @@
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RiT-Dw-Uvu">
                                         <rect key="frame" x="29" y="270" width="305" height="1"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="Pgi-eL-iam"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WL5-hT-nuX">
                                         <rect key="frame" x="28" y="425" width="318" height="1"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="jhC-2I-Lxd"/>
                                         </constraints>
@@ -1045,7 +1044,7 @@
                                             <segment title="GIVER"/>
                                             <segment title="RECEIVER"/>
                                         </segments>
-                                        <color key="tintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="segmentValueChanged:" destination="P9a-mG-1Fd" eventType="valueChanged" id="K5j-PO-ckf"/>
                                         </connections>
@@ -1101,14 +1100,14 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxQ-ci-nSn">
                                                 <rect key="frame" x="20" y="38" width="201" height="30"/>
-                                                <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="201" id="FqG-nk-LCu"/>
                                                     <constraint firstAttribute="height" constant="30" id="Rwr-mf-OWH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="10"/>
                                                 <state key="normal" title="Select Type">
-                                                    <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="recTypePressed:" destination="P9a-mG-1Fd" eventType="touchUpInside" id="STW-FU-Zi0"/>
@@ -1179,7 +1178,7 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="VTU-HJ-OEg" firstAttribute="top" secondItem="2vs-Kl-rU4" secondAttribute="bottom" id="feC-AV-qf4"/>
                             <constraint firstAttribute="trailing" secondItem="2vs-Kl-rU4" secondAttribute="trailing" id="i0D-nk-igi"/>
@@ -1218,7 +1217,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-Ll-d61">
                                 <rect key="frame" x="0.0" y="514" width="375" height="1"/>
-                                <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="6eT-6N-kNx"/>
                                 </constraints>
@@ -1235,7 +1234,7 @@
                                             <constraint firstAttribute="width" constant="99" id="yWR-Ut-STN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
-                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hometown, USA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XEO-Ck-hBd">
@@ -1244,37 +1243,37 @@
                                             <constraint firstAttribute="width" constant="117" id="89j-T2-FYe"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
-                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKt-jv-0vD">
                                         <rect key="frame" x="14" y="99" width="72.5" height="22"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="12"/>
-                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="This organization is transforming our local neighborhood. Thanks for your help!" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGs-py-csL">
                                         <rect key="frame" x="95" y="100.5" width="257" height="39.5"/>
-                                        <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="11"/>
-                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="11"/>
+                                        <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NON-PROFIT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsX-H2-zV4">
                                         <rect key="frame" x="116" y="67" width="142" height="26"/>
                                         <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="13"/>
-                                        <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VVE-Ne-b7t">
                                         <rect key="frame" x="254" y="13" width="107" height="44"/>
-                                        <color key="backgroundColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="Xqb-Kp-7sv"/>
                                             <constraint firstAttribute="width" constant="107" id="gYz-uu-qP4"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Glegoo-Bold" family="Glegoo" pointSize="12"/>
                                         <state key="normal" title="Quick Send">
-                                            <color key="titleColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="quickSendTapped:" destination="2Xx-db-MMm" eventType="touchUpInside" id="J0v-Ih-Ms7"/>
@@ -1336,7 +1335,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="JUq-My-f8X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingsCell" rowHeight="60" id="UPV-cf-q7o" customClass="DDSettingsCell" customModule="DollarAndADream" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="60"/>
@@ -1351,22 +1350,22 @@
                                                 <constraint firstAttribute="height" constant="17" id="Wxv-Yb-2QU"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="Glegoo-Regular" family="Glegoo" pointSize="15"/>
-                                            <color key="textColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="textColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="i0h-Hy-0qR">
                                             <rect key="frame" x="297" y="15" width="51" height="31"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <color key="tintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="tintColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="onTintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="thumbTintColor" red="0.20392156859999999" green="0.85490196080000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="thumbTintColor" red="0.89213150740000002" green="1" blue="0.59068381790000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <connections>
                                                 <action selector="toggleTapped:" destination="FoT-NL-l5C" eventType="valueChanged" id="WDv-s7-pjf"/>
                                             </connections>
                                         </switch>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5u-En-dbL">
                                             <rect key="frame" x="15" y="59" width="345" height="1"/>
-                                            <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.32156862749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.01160779875" green="0.76084953550000001" blue="0.83341151479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="cDC-ih-U25"/>
                                             </constraints>
