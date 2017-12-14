@@ -8,10 +8,11 @@
 
 import UIKit
 
-class DDLoginViewController: UIViewController {
+class DDLoginViewController: UIViewController, SignInViewDelegate {
 
     @IBOutlet var emailTextfield: UITextField!
     @IBOutlet var passTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,23 +24,29 @@ class DDLoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func loginTapped(_ sender: UIButton) {
-        //Login Tapped -> Validate the fields first, then Take and make Dictionary out of emailTextfield and passTextFields for URLRequest
-    }
 
+    func signInComplete() {
+        dismiss(animated: true, completion: nil)
+        performSegue(withIdentifier: "LoginSegue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SignUpSegue" {
+            
+            let navi = segue.destination as! UINavigationController
+            let vc = navi.viewControllers[0] as! DDSignUpViewController
+            vc.delegate = self
+            
+        } else if segue.identifier == "HomeSegue" {
+            
+            let vc = segue.destination as! DDSignUpViewController
+        }
+        
+            
+    }
     @IBAction func signUpTapped(_ sender: UIButton) {
         //Segue to SignUpViewController
         
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

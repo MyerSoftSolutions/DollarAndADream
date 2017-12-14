@@ -21,7 +21,20 @@ extension UIViewController{
         self.navigationItem.leftBarButtonItem = backBtn
     }
 
+    func createCustomSubmitButton(_ btnTitle: String) {
+        //        var image = UIImage(named: "menu")
+        //        image = image?.withRenderingMode(UIImageRenderingMode.alwaysOriginal)
+        //        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: image, style: UIBarButtonItemStyle.Plain, target: self, action: Selector("showMenu"))
+        
+        let submitBtn = UIBarButtonItem(title: btnTitle, style: UIBarButtonItemStyle.done, target: self, action: #selector(UIViewController.submitButtonClicked))
+        self.navigationItem.rightBarButtonItem = submitBtn
+    }
+    
     @objc func navigationBackButtonClicked() {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func submitButtonClicked() {
         self.navigationController?.dismiss(animated: true, completion: nil)
     }
 
