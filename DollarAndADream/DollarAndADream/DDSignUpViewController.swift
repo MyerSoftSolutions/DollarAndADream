@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol SignInViewDelegate {
-    func signInComplete()
-}
-
 class DDSignUpViewController: UIViewController, UIScrollViewDelegate, RecTypeSelectionModalDelegate {
 
     @IBOutlet var scrollView: UIScrollView!
@@ -23,12 +19,9 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate, RecTypeSel
     @IBOutlet weak var recTypeBtn: UIButton!
     var arr = ["EDUCATION", "PERSON IN NEED", "ENTREPRENEUR", "NON-PROFIT"]
     var index = 0
-    var delegate : SignInViewDelegate?
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.createCustomBackButton("X")
         self.createCustomSubmitButton("Submit")
         self.accountTypeSegControl.selectedSegmentIndex = 0
         self.segBottomToSeparatorCon.constant = 10
@@ -38,7 +31,11 @@ class DDSignUpViewController: UIViewController, UIScrollViewDelegate, RecTypeSel
     }
 
     override func submitButtonClicked() {
-        delegate?.signInComplete()
+        performSegue(withIdentifier: "SubmitSegue", sender: nil)
+    }
+    
+    @IBAction func dismissSignUp(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func segmentValueChanged(_ sender: UISegmentedControl) {
